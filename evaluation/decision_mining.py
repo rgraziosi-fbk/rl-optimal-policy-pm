@@ -152,9 +152,9 @@ def retrieve_decision_points_DFG(DFG, BPMN_ELEMENTS):
             decision_points.append(key)
     return decision_points
 
-PATH_LOG = 'input/BPIC17_parallel/BPI_2017_log_strip_newcredit_100_ForTEST_fixed_times.csv'
-#path_dfg_pm4py = 'input/BPIC12/BPIC12_DFG.dfg'
-path_dfg = 'input/BPIC17_parallel/BPIC17_parallel_DFG.json'
+
+PATH_LOG = 'input/BPIC17_parallel/BPI_2017_log_strip_newcredit_100_ForTEST_fixed_times.csv' ##### path for the log give as input
+path_dfg = 'input/BPIC17_parallel/BPIC17_parallel_DFG.json' ### path of the DFG retrieve in the previous step with "preprocessing_bpmn.py"
 
 
 with open(path_dfg) as file:
