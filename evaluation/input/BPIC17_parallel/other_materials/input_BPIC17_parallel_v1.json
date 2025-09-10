@@ -1,0 +1,1108 @@
+{
+  "start_timestamp": "2016-10-19 00:00:00",
+  "duration_simulation": 30,
+  "interTriggerTimer": {
+    "type": "histogram_sampling",
+    "parameters": {
+      "histogram_data": [
+        0.4339622641509434,
+        0.6543904208998549,
+        0.7784833091436865,
+        0.852322206095791,
+        0.897133526850508,
+        0.9265239477503628,
+        0.94466618287373,
+        0.9600870827285921,
+        0.9680696661828737,
+        0.9736937590711175,
+        0.9793178519593614,
+        0.9834905660377359,
+        0.986756168359942,
+        0.9891146589259797,
+        0.9909288824383164,
+        0.9940130624092888,
+        0.9951015965166908,
+        0.9965529753265603,
+        0.9985486211901307,
+        1.0
+      ],
+      "bin_midpoints": [
+        182.175,
+        546.5250000000001,
+        910.8750000000001,
+        1275.2250000000001,
+        1639.575,
+        2003.9250000000002,
+        2368.2750000000005,
+        2732.625,
+        3096.9750000000004,
+        3461.325,
+        3825.675,
+        4190.025000000001,
+        4554.375,
+        4918.725,
+        5283.075000000001,
+        5647.425,
+        6011.775000000001,
+        6376.125,
+        6740.475,
+        7104.825000000001
+      ]
+    }
+  },
+  "resource": {
+    "Role 1": {
+      "resources": [
+        "User_18",
+        "User_77",
+        "User_7",
+        "User_60",
+        "User_2",
+        "User_5",
+        "User_10",
+        "User_17",
+        "User_84",
+        "User_58",
+        "User_104",
+        "User_14",
+        "User_67",
+        "User_48",
+        "User_40",
+        "User_70",
+        "User_79",
+        "User_28",
+        "User_42",
+        "User_49",
+        "User_66",
+        "User_54",
+        "User_3",
+        "User_36",
+        "User_57",
+        "User_26",
+        "User_96",
+        "User_52",
+        "User_56",
+        "User_35",
+        "User_39",
+        "User_37",
+        "User_24",
+        "User_61",
+        "User_41",
+        "User_103",
+        "User_21",
+        "User_80",
+        "User_71",
+        "User_44",
+        "User_65",
+        "User_4",
+        "User_62",
+        "User_23",
+        "User_16",
+        "User_43",
+        "User_63",
+        "User_46",
+        "User_15",
+        "User_50",
+        "User_78",
+        "User_12",
+        "User_51",
+        "User_72",
+        "User_98",
+        "User_81",
+        "User_88",
+        "User_69",
+        "User_94",
+        "User_135",
+        "User_105",
+        "User_25"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    },
+    "Role 2": {
+      "resources": [
+        "User_53",
+        "User_133",
+        "User_113",
+        "User_123",
+        "User_112",
+        "User_121",
+        "User_118",
+        "User_27",
+        "User_119",
+        "User_131",
+        "User_129",
+        "User_130",
+        "User_122",
+        "User_120",
+        "User_107",
+        "User_126",
+        "User_125",
+        "User_139",
+        "User_128",
+        "User_134",
+        "User_140",
+        "User_137"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    },
+    "Role 3": {
+      "resources": [
+        "User_106",
+        "User_83",
+        "User_93",
+        "User_29",
+        "User_31",
+        "User_109",
+        "User_90",
+        "User_99",
+        "User_68",
+        "User_30",
+        "User_75",
+        "User_100",
+        "User_136",
+        "User_87"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    },
+    "Role 4": {
+      "resources": [
+        "User_143",
+        "User_138",
+        "User_55",
+        "User_144"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    },
+    "Role 5": {
+      "resources": [
+        "User_8",
+        "User_145"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    },
+    "Role 6": {
+      "resources": [
+        "NOT_SET"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    },
+    "Role 7": {
+      "resources": [
+        "User_1"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    },
+    "Role 8": {
+      "resources": [
+        "User_64"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    },
+    "Role 9": {
+      "resources": [
+        "User_141"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    },
+    "Role 10": {
+      "resources": [
+        "User_111"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    },
+    "Role 11": {
+      "resources": [
+        "User_142"
+      ],
+      "calendar": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "hour_min": 8,
+        "hour_max": 19
+      }
+    }
+  },
+  "activity_to_role": {
+    "W_Completeapplication": [
+      "Role 1",
+      "Role 10",
+      "Role 2",
+      "Role 3",
+      "Role 4",
+      "Role 5",
+      "Role 8"
+    ],
+    "A_CreateApplication": [
+      "Role 1",
+      "Role 10",
+      "Role 2",
+      "Role 3",
+      "Role 7"
+    ],
+    "A_Concept": [
+      "Role 1",
+      "Role 10",
+      "Role 2",
+      "Role 3",
+      "Role 7",
+      "Role 8"
+    ],
+    "A_Accepted": [
+      "Role 1",
+      "Role 2",
+      "Role 3"
+    ],
+    "O_CreateOffer": [
+      "Role 1",
+      "Role 10",
+      "Role 2",
+      "Role 3"
+    ],
+    "O_Created": [
+      "Role 1",
+      "Role 10",
+      "Role 2",
+      "Role 3"
+    ],
+    "O_Sent(mailandonline)": [
+      "Role 1",
+      "Role 10",
+      "Role 11",
+      "Role 2",
+      "Role 3"
+    ],
+    "A_Complete": [
+      "Role 1",
+      "Role 11",
+      "Role 2",
+      "Role 3"
+    ],
+    "W_Callafteroffers": [
+      "Role 1",
+      "Role 11",
+      "Role 2",
+      "Role 3",
+      "Role 4"
+    ],
+    "W_Handleleads": [
+      "Role 1",
+      "Role 3",
+      "Role 4",
+      "Role 8"
+    ],
+    "A_Denied": [
+      "Role 1",
+      "Role 2",
+      "Role 3",
+      "Role 4"
+    ],
+    "O_Refused": [
+      "Role 1",
+      "Role 2",
+      "Role 3",
+      "Role 4"
+    ],
+    "O_Cancelled": [
+      "Role 1",
+      "Role 10",
+      "Role 2",
+      "Role 3",
+      "Role 7"
+    ],
+    "A_Cancelled": [
+      "Role 1",
+      "Role 10",
+      "Role 2",
+      "Role 3",
+      "Role 7"
+    ],
+    "O_Sent(onlineonly)": [
+      "Role 1",
+      "Role 2",
+      "Role 3"
+    ],
+    "W_Validateapplication": [
+      "Role 1",
+      "Role 2",
+      "Role 3",
+      "Role 4"
+    ],
+    "A_Validating": [
+      "Role 1",
+      "Role 2",
+      "Role 3"
+    ],
+    "W_Shortenedcompletion": [
+      "Role 1"
+    ],
+    "W_Assesspotentialfraud": [
+      "Role 1",
+      "Role 2",
+      "Role 3",
+      "Role 4",
+      "Role 8",
+      "Role 9"
+    ],
+    "W_Callincompletefiles": [
+      "Role 1",
+      "Role 2",
+      "Role 3",
+      "Role 8"
+    ],
+    "A_Incomplete": [
+      "Role 1",
+      "Role 2",
+      "Role 3",
+      "Role 8"
+    ],
+    "O_Returned": [
+      "Role 2",
+      "Role 3"
+    ],
+    "O_Accepted": [
+      "Role 2",
+      "Role 3"
+    ],
+    "A_Pending": [
+      "Role 2",
+      "Role 3"
+    ],
+    "START": [
+      "Role 6"
+    ],
+    "END": [
+      "Role 6"
+    ],
+    "A_Submitted": [
+      "Role 7"
+    ]
+  },
+  "processing_time": {
+    "END": {
+      "name": "uniform",
+      "parameters": {
+        "low": 0.0,
+        "high": 0.0
+      }
+    },
+    "START": {
+      "name": "uniform",
+      "parameters": {
+        "low": 0.0,
+        "high": 0.0
+      }
+    },
+    "A_Cancelled": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "A_Concept": {
+      "name": "norm",
+      "parameters": {
+        "mean": 547.5467582927995,
+        "std": 167.28552297886984,
+        "min": 0.0,
+        "max": 600.0
+      }
+    },
+    "A_CreateApplication": {
+      "name": "norm",
+      "parameters": {
+        "mean": 548.5413161815933,
+        "std": 165.78651521704603,
+        "min": 0.0,
+        "max": 600.0
+      }
+    },
+    "A_Submitted": {
+      "name": "norm",
+      "parameters": {
+        "mean": 548.5403265724889,
+        "std": 165.79000291587167,
+        "min": 0.0,
+        "max": 600.0
+      }
+    },
+    "O_Cancelled": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "A_Accepted": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "A_Complete": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "A_Denied": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "A_Validating": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "O_CreateOffer": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "O_Created": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "O_Refused": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "O_Sent(mailandonline)": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "O_Sent(onlineonly)": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "W_Callafteroffers": {
+      "name": "lognorm",
+      "parameters": {
+        "mean": 224.14197530864197,
+        "std": 160784.88725041912,
+        "min": 29.0,
+        "max": 3600.0
+      }
+    },
+    "W_Completeapplication": {
+      "name": "lognorm",
+      "parameters": {
+        "mean": 495.0924369747899,
+        "std": 97911.57969069979,
+        "min": 2.0,
+        "max": 1315.0
+      }
+    },
+    "W_Handleleads": {
+      "name": "exponential",
+      "parameters": {
+        "scale": 136.57142857142858,
+        "min": 10.0,
+        "max": 432.0
+      }
+    },
+    "W_Validateapplication": {
+      "name": "lognorm",
+      "parameters": {
+        "mean": 196.55555555555554,
+        "std": 121888.69135802466,
+        "min": 5.0,
+        "max": 1150.0
+      }
+    },
+    "A_Incomplete": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "A_Pending": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "O_Accepted": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "O_Returned": {
+      "name": "uniform",
+      "parameters": {
+        "low": 600.0,
+        "high": 600.0
+      }
+    },
+    "W_Assesspotentialfraud": {
+      "name": "norm",
+      "parameters": {
+        "mean": 1636.3333333333333,
+        "std": 1494.8650626580165,
+        "min": 78.0,
+        "max": 3600.0
+      }
+    },
+    "W_Callincompletefiles": {
+      "name": "lognorm",
+      "parameters": {
+        "mean": 458.8514492753623,
+        "std": 194887.98880224742,
+        "min": 10.0,
+        "max": 3600.0
+      }
+    },
+    "W_Shortenedcompletion": {
+      "name": "uniform",
+      "parameters": {
+        "low": 322.0,
+        "high": 322.0
+      }
+    }
+  },
+  "resource_to_role": {
+    "User_18": "Role 1",
+    "User_77": "Role 1",
+    "User_7": "Role 1",
+    "User_60": "Role 1",
+    "User_2": "Role 1",
+    "User_5": "Role 1",
+    "User_10": "Role 1",
+    "User_17": "Role 1",
+    "User_84": "Role 1",
+    "User_58": "Role 1",
+    "User_104": "Role 1",
+    "User_14": "Role 1",
+    "User_67": "Role 1",
+    "User_48": "Role 1",
+    "User_40": "Role 1",
+    "User_70": "Role 1",
+    "User_79": "Role 1",
+    "User_28": "Role 1",
+    "User_42": "Role 1",
+    "User_49": "Role 1",
+    "User_66": "Role 1",
+    "User_54": "Role 1",
+    "User_3": "Role 1",
+    "User_36": "Role 1",
+    "User_57": "Role 1",
+    "User_26": "Role 1",
+    "User_96": "Role 1",
+    "User_52": "Role 1",
+    "User_56": "Role 1",
+    "User_35": "Role 1",
+    "User_39": "Role 1",
+    "User_37": "Role 1",
+    "User_24": "Role 1",
+    "User_61": "Role 1",
+    "User_41": "Role 1",
+    "User_103": "Role 1",
+    "User_21": "Role 1",
+    "User_80": "Role 1",
+    "User_71": "Role 1",
+    "User_44": "Role 1",
+    "User_65": "Role 1",
+    "User_4": "Role 1",
+    "User_62": "Role 1",
+    "User_23": "Role 1",
+    "User_16": "Role 1",
+    "User_43": "Role 1",
+    "User_63": "Role 1",
+    "User_46": "Role 1",
+    "User_15": "Role 1",
+    "User_50": "Role 1",
+    "User_78": "Role 1",
+    "User_12": "Role 1",
+    "User_51": "Role 1",
+    "User_72": "Role 1",
+    "User_98": "Role 1",
+    "User_81": "Role 1",
+    "User_88": "Role 1",
+    "User_69": "Role 1",
+    "User_94": "Role 1",
+    "User_135": "Role 1",
+    "User_105": "Role 1",
+    "User_25": "Role 1"
+  },
+  "PREFIX_LEN": 25,
+  "TRACE_ATTRIBUTES": [
+    "ApplicationType",
+    "AMOUNT_REQ",
+    "LoanGoal"
+  ],
+  "ATTRIB_TO_ENCODE": [],
+  "EVENT_ATTRIBUTES": [],
+  "RESOURCE_EMPTY": "other",
+  "path_decision_tree": "input/BPIC17_parallel/",
+  "ENV_activities": [
+    "START",
+    "O_Accepted",
+    "A_Cancelled",
+    "O_Returned",
+    "O_Refused",
+    "END"
+  ],
+  "AND_node_termination": {
+    "idadf0aa2c-fd32-4714-a18a-994e43b38b56": "idf6415093-39c1-4bdc-a018-97390dc4b898",
+    "id6b777da6-fa5f-44bc-a6b2-f0722d6f621d": "idf6415093-39c1-4bdc-a018-97390dc4b898",
+    "idd9f9c994-dbc3-479a-ab13-f971da224a87": "idc329c4db-1090-4838-935b-6e036087c69e",
+    "id841a23d2-f47c-4c80-9e3d-a7180af3474b": "idc329c4db-1090-4838-935b-6e036087c69e",
+    "ide57888ce-8936-4c73-8684-558525de92cc": "idc329c4db-1090-4838-935b-6e036087c69e",
+    "id144a58c1-9c57-4056-a941-ea9b5a24f55c": "idc329c4db-1090-4838-935b-6e036087c69e",
+    "id31fc980e-8f73-4a1e-becb-6ef1e01857c9": "idc329c4db-1090-4838-935b-6e036087c69e"
+  },
+  "gateway_probability": {
+    "idb3df67c7-9962-4a81-bef0-35c808774015": [
+      {
+        "path_id": "idea0c2207-6f73-4ac0-bf96-6bc4b6a7ca1c",
+        "value": 0.0005332385353714896
+      },
+      {
+        "path_id": "ide902b645-644b-488e-bba7-7243583d2b55",
+        "value": 0.9994667614646285
+      }
+    ],
+    "id7dcfef85-1611-4690-83bb-c5b0a7b00dfd": [
+      {
+        "path_id": "idcdc5743e-156e-4a8b-9622-bdd60c20e55e",
+        "value": 0.004987531172069825
+      },
+      {
+        "path_id": "idb7457d23-2f49-430a-a8b1-6eaa1e20e6f1",
+        "value": 0.9950124688279302
+      }
+    ],
+    "ide57888ce-8936-4c73-8684-558525de92cc": [
+      {
+        "path_id": "id5bdc08fa-ff6c-4a3e-a76c-19398b8b55c5",
+        "value": 1.0
+      },
+      {
+        "path_id": "id242d0200-0429-47db-8cbb-378637064466",
+        "value": 0
+      }
+    ],
+    "idbd3d53d2-6c20-4e80-ba0a-b56604345919": [
+      {
+        "path_id": "idfd7b3ceb-2e08-4ca5-ac5e-7c3e165cb814",
+        "value": 0.010684474123539232
+      },
+      {
+        "path_id": "idc684c557-039c-4708-949a-1b33877010e6",
+        "value": 0.9893155258764608
+      }
+    ],
+    "idc9298a5c-9555-4f8a-b181-c06f70cfe0f0": [
+      {
+        "path_id": "id704fbd52-37d9-48ce-830e-64efc8ecab73",
+        "value": 0.4625543296556336
+      },
+      {
+        "path_id": "id18e3e240-6d5e-4737-b109-2f46aa2afbc6",
+        "value": 0.5374456703443664
+      }
+    ],
+    "id272172ce-a67a-4253-9743-4e63e6447b9b": [
+      {
+        "path_id": "id9ac13084-ea65-4ea7-a96b-82424de0d17b",
+        "value": 0.17094666464063213
+      },
+      {
+        "path_id": "id7ae58489-a825-48f1-a3b4-fedf81aa8b89",
+        "value": 0.8290533353593679
+      }
+    ],
+    "ided355e0e-a4a8-441a-9404-52a307e9a95a": [
+      {
+        "path_id": "id258cc4eb-8475-476f-8442-52d40b575597",
+        "value": 0.9830560690080099
+      },
+      {
+        "path_id": "idf0e84ff9-da20-4349-a59c-a4c62796e015",
+        "value": 0.016943930991990142
+      }
+    ],
+    "id819e8913-5328-484a-9b71-36c10fae9d4d": [
+      {
+        "path_id": "id5e9008ab-dd8c-426a-a46c-ad4c1e437f35",
+        "value": 0.709731543624161
+      },
+      {
+        "path_id": "ida2f7f766-c1e4-45ef-a6bf-5818fe616390",
+        "value": 0.2902684563758389
+      }
+    ],
+    "id5c7fc7dc-62a2-470a-8db7-10f168b5835e": [
+      {
+        "path_id": "id063a2fe7-416d-470b-8388-b292d2c7f104",
+        "value": 0
+      },
+      {
+        "path_id": "id38a8095e-2f34-43c1-95a1-6da45edeac4a",
+        "value": 1.0
+      }
+    ],
+    "id01a4e4e1-7a0c-4cb6-9480-4855c1e743ca": [
+      {
+        "path_id": "id9aee487e-4fc1-4300-b076-5ce22fd7f8f9",
+        "value": 0.11291512915129151
+      },
+      {
+        "path_id": "idb947aa99-e44c-4e49-8f2d-2932a5d1f8a6",
+        "value": 0.8870848708487085
+      }
+    ],
+    "id31fc980e-8f73-4a1e-becb-6ef1e01857c9": [
+      {
+        "path_id": "ida7c7b8c0-81e4-4055-8b72-cea8e11fc8e0",
+        "value": 0.19939410630680254
+      },
+      {
+        "path_id": "id5d338f8f-52af-4c3e-92f6-e1a79941849c",
+        "value": 0.8006058936931975
+      }
+    ],
+    "idf970a3fe-25ac-4b36-8f72-b522efc95d49": [
+      {
+        "path_id": "id6d75ed3d-92c2-4d7c-9e69-7e0bfec54f11",
+        "value": 0.8010204081632653
+      },
+      {
+        "path_id": "id81525f71-f027-473f-8c9c-51f0b739f398",
+        "value": 0.1989795918367347
+      }
+    ],
+    "id1dfee61b-e1e0-40b2-aa0b-4e7548fb732a": [
+      {
+        "path_id": "idfee777b5-1e35-40c6-a8c9-360b6f7f8c2e",
+        "value": 0.27686545664073753
+      },
+      {
+        "path_id": "id6e059608-9bed-4b2e-877e-b59760af94f4",
+        "value": 0.7231345433592624
+      }
+    ],
+    "idc17cd603-628d-4a94-bc90-8bac4253f208": [
+      {
+        "path_id": "id4e9756c9-e455-4260-8a7a-9954efc760c4",
+        "value": 0.043915603532875366
+      },
+      {
+        "path_id": "idc81074ed-89e4-4a22-af57-dec6606066a9",
+        "value": 0.9560843964671246
+      }
+    ],
+    "id841a23d2-f47c-4c80-9e3d-a7180af3474b": [
+      {
+        "path_id": "ide236a35a-c000-474f-8874-35303976f4e5",
+        "value": 0.614062746334542
+      },
+      {
+        "path_id": "id237a08c3-e03d-496e-896a-be42488a1c7a",
+        "value": 0.385937253665458
+      }
+    ],
+    "id998600ee-6869-496d-ab39-31d0f43ee30e": [
+      {
+        "path_id": "ide2afaa1b-d1c5-48c2-8ecb-b970f24fb941",
+        "value": 0.5432270397080545
+      },
+      {
+        "path_id": "id0157f4d6-5dd8-4643-a1e3-46484afd11f2",
+        "value": 0.4567729602919454
+      }
+    ],
+    "id6b777da6-fa5f-44bc-a6b2-f0722d6f621d": [
+      {
+        "path_id": "idc6ecfd04-7f15-4571-9715-119488641c7b",
+        "value": 0.9373118469984062
+      },
+      {
+        "path_id": "idb9f41ea6-5db5-41c8-ba8d-59b7244e403c",
+        "value": 0.06268815300159376
+      }
+    ],
+    "ida5280cbe-a55a-4fb8-a488-d34fa5b4db11": [
+      {
+        "path_id": "id545db3f5-ace5-48fd-8b5e-1b1008d1dc6e",
+        "value": 0.36410681018422686
+      },
+      {
+        "path_id": "ide49941cd-ac1a-48d3-a148-f6f48503f21e",
+        "value": 0.6358931898157731
+      }
+    ],
+    "id7a84e720-7ee7-44d0-a559-c9c87f1a110f": [
+      {
+        "path_id": "id60e2a932-0707-4321-9fa5-b52135890dc1",
+        "value": 0.15517874183366365
+      },
+      {
+        "path_id": "id871b1c03-0155-46d6-9bdc-68f22fd1bd7e",
+        "value": 0.8448212581663364
+      }
+    ],
+    "ide7d4d1ba-72a2-445d-a73d-468ce07198c4": [
+      {
+        "path_id": "idced5b63c-7bc6-4a76-8e57-15fad2433561",
+        "value": 0.10174902831760134
+      },
+      {
+        "path_id": "idb74fac86-2582-412c-a788-ea7d8030c137",
+        "value": 0.8982509716823986
+      }
+    ],
+    "id9b7769e0-db98-48ac-96f4-3d2a58e60cfa": [
+      {
+        "path_id": "idb402beac-0f74-49cd-8cc4-7c52dd3eb82c",
+        "value": 0.938771975404867
+      },
+      {
+        "path_id": "id8c581726-ea5f-4505-ad31-33aca95b4ad1",
+        "value": 0.061228024595132935
+      }
+    ],
+    "idd5e9b301-84a3-4f30-a1df-57ebc8fce06b": [
+      {
+        "path_id": "ida262f02c-6300-4c7f-b87b-18aae4b77ac7",
+        "value": 0.6178380443086325
+      },
+      {
+        "path_id": "id3bc5788a-9058-4326-8570-917a4da678fd",
+        "value": 0.38216195569136746
+      }
+    ],
+    "id85ca7bd3-3210-4627-8b98-af7b8fdcf72d": [
+      {
+        "path_id": "id03acc36f-6070-4f29-ad45-3ba28e0d240b",
+        "value": 0.9033663366336634
+      },
+      {
+        "path_id": "id6e7889fc-e21d-495a-9e0e-4cdb9949a20d",
+        "value": 0.09663366336633664
+      }
+    ],
+    "idc45192fe-d6c4-4a96-9287-bfc553f5621c": [
+      {
+        "path_id": "idbff6167f-fca8-4d97-8974-b212511af153",
+        "value": 0.01098901098901099
+      },
+      {
+        "path_id": "id2bbfebfc-8195-4c48-8bd5-b961a3c2c5eb",
+        "value": 0.989010989010989
+      }
+    ],
+    "id121c6e26-014f-4597-967a-11e2b886b4f3": [
+      {
+        "path_id": "id99835d9b-d087-44b9-b06d-1182a29a4309",
+        "value": 0.42662116040955633
+      },
+      {
+        "path_id": "ide39c36a3-9783-4eda-a084-608e64d5c32f",
+        "value": 0.5733788395904437
+      }
+    ],
+    "id144a58c1-9c57-4056-a941-ea9b5a24f55c": [
+      {
+        "path_id": "idcd1cd58f-8436-46f3-b510-0c5517895793",
+        "value": 0
+      },
+      {
+        "path_id": "id7d6b06e9-8b43-4c0a-aee5-0718eb4c5b95",
+        "value": 1.0
+      }
+    ],
+    "idd9f9c994-dbc3-479a-ab13-f971da224a87": [
+      {
+        "path_id": "idb50567d9-2ebc-4038-8bd7-0bad32ec645a",
+        "value": 0.5714817572598659
+      },
+      {
+        "path_id": "id031187ac-37ab-4b22-9c72-57b2e2d7333d",
+        "value": 0.428518242740134
+      }
+    ],
+    "id5487cecc-fe81-40fc-a564-d872ef07ba40": [
+      {
+        "path_id": "ide8b3f6d7-81d3-4b32-abbe-49787f510b37",
+        "value": 0.6308381317978247
+      },
+      {
+        "path_id": "id92b81ddf-b109-4a62-b924-a2a43f32c1e8",
+        "value": 0.3691618682021753
+      }
+    ],
+    "ide8236571-6c5b-4533-92de-8edaa47eba78": [
+      {
+        "path_id": "id94df655d-aac1-4c12-91b8-83b2694bc626",
+        "value": 0.8406723728988347
+      },
+      {
+        "path_id": "id971bb035-9299-4db5-b961-3e451f71b324",
+        "value": 0.1593276271011653
+      }
+    ],
+    "ida25f49f5-3157-4eaf-a547-e6f28d9befcd": [
+      {
+        "path_id": "id12cf94b9-fe39-4a23-91a9-77496ec66386",
+        "value": 0.5606102635228849
+      },
+      {
+        "path_id": "idfc5138f9-88ce-4fc8-b76a-d1e79e1aa5b9",
+        "value": 0.4393897364771151
+      }
+    ]
+  }
+}

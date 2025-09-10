@@ -6,3 +6,6 @@ datasets/
 logs/
 predict/
 .DS_Store
+/evaluation/.idea
+/evaluation/final_output
+/evaluation/output

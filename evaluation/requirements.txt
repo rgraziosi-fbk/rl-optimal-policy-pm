@@ -1,0 +1,9 @@
+d3rlpy==2.8.1
+hyperopt==0.2.7
+numpy==2.3.3
+pandas==2.3.2
+pm4py==2.7.15.2
+scikit_learn==1.4.0
+scipy==1.16.1
+simpy==4.0.1
+torch==2.8.0

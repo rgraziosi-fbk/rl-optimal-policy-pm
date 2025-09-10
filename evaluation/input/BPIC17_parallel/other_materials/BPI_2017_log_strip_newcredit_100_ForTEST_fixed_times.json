@@ -1,0 +1,997 @@
+{
+    "process_model": "/home/francesca/Documents/Simod/outputs/20250702_135819_0283A6BF_70E3_4B27_934F_DD8285CB4B8B/best_result/BPI_2017_log_strip_newcredit_100_ForTEST_fixed_times.bpmn",
+    "gateway_branching_probabilities": [
+        {
+            "gateway_id": "idb3df67c7-9962-4a81-bef0-35c808774015",
+            "probabilities": [
+                {
+                    "path_id": "idea0c2207-6f73-4ac0-bf96-6bc4b6a7ca1c",
+                    "value": 0.0005332385353714896
+                },
+                {
+                    "path_id": "ide902b645-644b-488e-bba7-7243583d2b55",
+                    "value": 0.9994667614646285
+                }
+            ]
+        },
+        {
+            "gateway_id": "id7dcfef85-1611-4690-83bb-c5b0a7b00dfd",
+            "probabilities": [
+                {
+                    "path_id": "idcdc5743e-156e-4a8b-9622-bdd60c20e55e",
+                    "value": 0.00017898693395382138
+                },
+                {
+                    "path_id": "idb7457d23-2f49-430a-a8b1-6eaa1e20e6f1",
+                    "value": 0.9998210130660462
+                }
+            ]
+        },
+        {
+            "gateway_id": "ide57888ce-8936-4c73-8684-558525de92cc",
+            "probabilities": [
+                {
+                    "path_id": "id5bdc08fa-ff6c-4a3e-a76c-19398b8b55c5",
+                    "value": 0.9997400571874188
+                },
+                {
+                    "path_id": "id242d0200-0429-47db-8cbb-378637064466",
+                    "value": 0.0002599428125812321
+                }
+            ]
+        },
+        {
+            "gateway_id": "idbd3d53d2-6c20-4e80-ba0a-b56604345919",
+            "probabilities": [
+                {
+                    "path_id": "idfd7b3ceb-2e08-4ca5-ac5e-7c3e165cb814",
+                    "value": 0.004077471967380225
+                },
+                {
+                    "path_id": "idc684c557-039c-4708-949a-1b33877010e6",
+                    "value": 0.9959225280326198
+                }
+            ]
+        },
+        {
+            "gateway_id": "idc9298a5c-9555-4f8a-b181-c06f70cfe0f0",
+            "probabilities": [
+                {
+                    "path_id": "id704fbd52-37d9-48ce-830e-64efc8ecab73",
+                    "value": 0.2765670635812177
+                },
+                {
+                    "path_id": "id18e3e240-6d5e-4737-b109-2f46aa2afbc6",
+                    "value": 0.7234329364187823
+                }
+            ]
+        },
+        {
+            "gateway_id": "id272172ce-a67a-4253-9743-4e63e6447b9b",
+            "probabilities": [
+                {
+                    "path_id": "id9ac13084-ea65-4ea7-a96b-82424de0d17b",
+                    "value": 0.1337002840909091
+                },
+                {
+                    "path_id": "id7ae58489-a825-48f1-a3b4-fedf81aa8b89",
+                    "value": 0.8662997159090909
+                }
+            ]
+        },
+        {
+            "gateway_id": "ided355e0e-a4a8-441a-9404-52a307e9a95a",
+            "probabilities": [
+                {
+                    "path_id": "id258cc4eb-8475-476f-8442-52d40b575597",
+                    "value": 0.5922169323121507
+                },
+                {
+                    "path_id": "idf0e84ff9-da20-4349-a59c-a4c62796e015",
+                    "value": 0.40778306768784933
+                }
+            ]
+        },
+        {
+            "gateway_id": "id819e8913-5328-484a-9b71-36c10fae9d4d",
+            "probabilities": [
+                {
+                    "path_id": "id5e9008ab-dd8c-426a-a46c-ad4c1e437f35",
+                    "value": 0.7714670255720054
+                },
+                {
+                    "path_id": "ida2f7f766-c1e4-45ef-a6bf-5818fe616390",
+                    "value": 0.2285329744279946
+                }
+            ]
+        },
+        {
+            "gateway_id": "id5c7fc7dc-62a2-470a-8db7-10f168b5835e",
+            "probabilities": [
+                {
+                    "path_id": "id063a2fe7-416d-470b-8388-b292d2c7f104",
+                    "value": 0.0009478672985781991
+                },
+                {
+                    "path_id": "id38a8095e-2f34-43c1-95a1-6da45edeac4a",
+                    "value": 0.9990521327014218
+                }
+            ]
+        },
+        {
+            "gateway_id": "id01a4e4e1-7a0c-4cb6-9480-4855c1e743ca",
+            "probabilities": [
+                {
+                    "path_id": "id9aee487e-4fc1-4300-b076-5ce22fd7f8f9",
+                    "value": 0.18413803102798318
+                },
+                {
+                    "path_id": "idb947aa99-e44c-4e49-8f2d-2932a5d1f8a6",
+                    "value": 0.8158619689720168
+                }
+            ]
+        },
+        {
+            "gateway_id": "id31fc980e-8f73-4a1e-becb-6ef1e01857c9",
+            "probabilities": [
+                {
+                    "path_id": "ida7c7b8c0-81e4-4055-8b72-cea8e11fc8e0",
+                    "value": 0.009189925119128658
+                },
+                {
+                    "path_id": "id5d338f8f-52af-4c3e-92f6-e1a79941849c",
+                    "value": 0.9908100748808714
+                }
+            ]
+        },
+        {
+            "gateway_id": "idf970a3fe-25ac-4b36-8f72-b522efc95d49",
+            "probabilities": [
+                {
+                    "path_id": "id6d75ed3d-92c2-4d7c-9e69-7e0bfec54f11",
+                    "value": 0.7621951219512195
+                },
+                {
+                    "path_id": "id81525f71-f027-473f-8c9c-51f0b739f398",
+                    "value": 0.23780487804878048
+                }
+            ]
+        },
+        {
+            "gateway_id": "id1dfee61b-e1e0-40b2-aa0b-4e7548fb732a",
+            "probabilities": [
+                {
+                    "path_id": "idfee777b5-1e35-40c6-a8c9-360b6f7f8c2e",
+                    "value": 0.49293240812130557
+                },
+                {
+                    "path_id": "id6e059608-9bed-4b2e-877e-b59760af94f4",
+                    "value": 0.5070675918786944
+                }
+            ]
+        },
+        {
+            "gateway_id": "idc17cd603-628d-4a94-bc90-8bac4253f208",
+            "probabilities": [
+                {
+                    "path_id": "id4e9756c9-e455-4260-8a7a-9954efc760c4",
+                    "value": 0.052647058823529415
+                },
+                {
+                    "path_id": "idc81074ed-89e4-4a22-af57-dec6606066a9",
+                    "value": 0.9473529411764706
+                }
+            ]
+        },
+        {
+            "gateway_id": "id841a23d2-f47c-4c80-9e3d-a7180af3474b",
+            "probabilities": [
+                {
+                    "path_id": "ide236a35a-c000-474f-8874-35303976f4e5",
+                    "value": 0.5990144748999076
+                },
+                {
+                    "path_id": "id237a08c3-e03d-496e-896a-be42488a1c7a",
+                    "value": 0.4009855251000924
+                }
+            ]
+        },
+        {
+            "gateway_id": "id998600ee-6869-496d-ab39-31d0f43ee30e",
+            "probabilities": [
+                {
+                    "path_id": "ide2afaa1b-d1c5-48c2-8ecb-b970f24fb941",
+                    "value": 0.8650618748940498
+                },
+                {
+                    "path_id": "id0157f4d6-5dd8-4643-a1e3-46484afd11f2",
+                    "value": 0.13493812510595016
+                }
+            ]
+        },
+        {
+            "gateway_id": "id6b777da6-fa5f-44bc-a6b2-f0722d6f621d",
+            "probabilities": [
+                {
+                    "path_id": "idc6ecfd04-7f15-4571-9715-119488641c7b",
+                    "value": 0.9372562920950017
+                },
+                {
+                    "path_id": "idb9f41ea6-5db5-41c8-ba8d-59b7244e403c",
+                    "value": 0.06274370790499822
+                }
+            ]
+        },
+        {
+            "gateway_id": "ida5280cbe-a55a-4fb8-a488-d34fa5b4db11",
+            "probabilities": [
+                {
+                    "path_id": "id545db3f5-ace5-48fd-8b5e-1b1008d1dc6e",
+                    "value": 0.36491301613917415
+                },
+                {
+                    "path_id": "ide49941cd-ac1a-48d3-a148-f6f48503f21e",
+                    "value": 0.6350869838608258
+                }
+            ]
+        },
+        {
+            "gateway_id": "id7a84e720-7ee7-44d0-a559-c9c87f1a110f",
+            "probabilities": [
+                {
+                    "path_id": "id60e2a932-0707-4321-9fa5-b52135890dc1",
+                    "value": 0.263821290403095
+                },
+                {
+                    "path_id": "id871b1c03-0155-46d6-9bdc-68f22fd1bd7e",
+                    "value": 0.736178709596905
+                }
+            ]
+        },
+        {
+            "gateway_id": "ide7d4d1ba-72a2-445d-a73d-468ce07198c4",
+            "probabilities": [
+                {
+                    "path_id": "idced5b63c-7bc6-4a76-8e57-15fad2433561",
+                    "value": 0.1299645390070922
+                },
+                {
+                    "path_id": "idb74fac86-2582-412c-a788-ea7d8030c137",
+                    "value": 0.8700354609929078
+                }
+            ]
+        },
+        {
+            "gateway_id": "id9b7769e0-db98-48ac-96f4-3d2a58e60cfa",
+            "probabilities": [
+                {
+                    "path_id": "idb402beac-0f74-49cd-8cc4-7c52dd3eb82c",
+                    "value": 0.9189873417721519
+                },
+                {
+                    "path_id": "id8c581726-ea5f-4505-ad31-33aca95b4ad1",
+                    "value": 0.0810126582278481
+                }
+            ]
+        },
+        {
+            "gateway_id": "idd5e9b301-84a3-4f30-a1df-57ebc8fce06b",
+            "probabilities": [
+                {
+                    "path_id": "ida262f02c-6300-4c7f-b87b-18aae4b77ac7",
+                    "value": 0.7052899395738366
+                },
+                {
+                    "path_id": "id3bc5788a-9058-4326-8570-917a4da678fd",
+                    "value": 0.2947100604261635
+                }
+            ]
+        },
+        {
+            "gateway_id": "id85ca7bd3-3210-4627-8b98-af7b8fdcf72d",
+            "probabilities": [
+                {
+                    "path_id": "id03acc36f-6070-4f29-ad45-3ba28e0d240b",
+                    "value": 0.8043818466353677
+                },
+                {
+                    "path_id": "id6e7889fc-e21d-495a-9e0e-4cdb9949a20d",
+                    "value": 0.19561815336463223
+                }
+            ]
+        },
+        {
+            "gateway_id": "idc45192fe-d6c4-4a96-9287-bfc553f5621c",
+            "probabilities": [
+                {
+                    "path_id": "idbff6167f-fca8-4d97-8974-b212511af153",
+                    "value": 0.013995801259622114
+                },
+                {
+                    "path_id": "id2bbfebfc-8195-4c48-8bd5-b961a3c2c5eb",
+                    "value": 0.9860041987403779
+                }
+            ]
+        },
+        {
+            "gateway_id": "id121c6e26-014f-4597-967a-11e2b886b4f3",
+            "probabilities": [
+                {
+                    "path_id": "id99835d9b-d087-44b9-b06d-1182a29a4309",
+                    "value": 0.20405982905982906
+                },
+                {
+                    "path_id": "ide39c36a3-9783-4eda-a084-608e64d5c32f",
+                    "value": 0.7959401709401709
+                }
+            ]
+        },
+        {
+            "gateway_id": "id144a58c1-9c57-4056-a941-ea9b5a24f55c",
+            "probabilities": [
+                {
+                    "path_id": "idcd1cd58f-8436-46f3-b510-0c5517895793",
+                    "value": 0
+                },
+                {
+                    "path_id": "id7d6b06e9-8b43-4c0a-aee5-0718eb4c5b95",
+                    "value": 1.0
+                }
+            ]
+        },
+        {
+            "gateway_id": "idd9f9c994-dbc3-479a-ab13-f971da224a87",
+            "probabilities": [
+                {
+                    "path_id": "idb50567d9-2ebc-4038-8bd7-0bad32ec645a",
+                    "value": 0.7265882352941176
+                },
+                {
+                    "path_id": "id031187ac-37ab-4b22-9c72-57b2e2d7333d",
+                    "value": 0.27341176470588235
+                }
+            ]
+        },
+        {
+            "gateway_id": "id5487cecc-fe81-40fc-a564-d872ef07ba40",
+            "probabilities": [
+                {
+                    "path_id": "ide8b3f6d7-81d3-4b32-abbe-49787f510b37",
+                    "value": 0.572212424064276
+                },
+                {
+                    "path_id": "id92b81ddf-b109-4a62-b924-a2a43f32c1e8",
+                    "value": 0.4277875759357241
+                }
+            ]
+        },
+        {
+            "gateway_id": "ide8236571-6c5b-4533-92de-8edaa47eba78",
+            "probabilities": [
+                {
+                    "path_id": "id94df655d-aac1-4c12-91b8-83b2694bc626",
+                    "value": 0.8551307847082495
+                },
+                {
+                    "path_id": "id971bb035-9299-4db5-b961-3e451f71b324",
+                    "value": 0.1448692152917505
+                }
+            ]
+        },
+        {
+            "gateway_id": "ida25f49f5-3157-4eaf-a547-e6f28d9befcd",
+            "probabilities": [
+                {
+                    "path_id": "id12cf94b9-fe39-4a23-91a9-77496ec66386",
+                    "value": 0.7161587526576896
+                },
+                {
+                    "path_id": "idfc5138f9-88ce-4fc8-b76a-d1e79e1aa5b9",
+                    "value": 0.2838412473423104
+                }
+            ]
+        }
+    ],
+    "arrival_time_calendar": [
+        {
+            "from": "MONDAY",
+            "to": "MONDAY",
+            "beginTime": "00:00:00",
+            "endTime": "23:59:59.999000"
+        },
+        {
+            "from": "TUESDAY",
+            "to": "TUESDAY",
+            "beginTime": "00:00:00",
+            "endTime": "23:59:59.999000"
+        },
+        {
+            "from": "WEDNESDAY",
+            "to": "WEDNESDAY",
+            "beginTime": "01:00:00",
+            "endTime": "04:00:00"
+        },
+        {
+            "from": "WEDNESDAY",
+            "to": "WEDNESDAY",
+            "beginTime": "05:00:00",
+            "endTime": "23:59:59.999000"
+        },
+        {
+            "from": "THURSDAY",
+            "to": "THURSDAY",
+            "beginTime": "00:00:00",
+            "endTime": "01:00:00"
+        },
+        {
+            "from": "THURSDAY",
+            "to": "THURSDAY",
+            "beginTime": "02:00:00",
+            "endTime": "23:59:59.999000"
+        },
+        {
+            "from": "FRIDAY",
+            "to": "FRIDAY",
+            "beginTime": "00:00:00",
+            "endTime": "23:59:59.999000"
+        },
+        {
+            "from": "SATURDAY",
+            "to": "SATURDAY",
+            "beginTime": "00:00:00",
+            "endTime": "01:00:00"
+        },
+        {
+            "from": "SATURDAY",
+            "to": "SATURDAY",
+            "beginTime": "05:00:00",
+            "endTime": "23:59:59.999000"
+        },
+        {
+            "from": "SUNDAY",
+            "to": "SUNDAY",
+            "beginTime": "00:00:00",
+            "endTime": "03:00:00"
+        },
+        {
+            "from": "SUNDAY",
+            "to": "SUNDAY",
+            "beginTime": "04:00:00",
+            "endTime": "23:59:59.999000"
+        }
+    ],
+    "arrival_time_distribution": {
+        "distribution_name": "histogram_sampling",
+        "histogram_data": {
+            "cdf": [
+                0.4339622641509434,
+                0.6543904208998549,
+                0.7784833091436865,
+                0.852322206095791,
+                0.897133526850508,
+                0.9265239477503628,
+                0.94466618287373,
+                0.9600870827285921,
+                0.9680696661828737,
+                0.9736937590711175,
+                0.9793178519593614,
+                0.9834905660377359,
+                0.986756168359942,
+                0.9891146589259797,
+                0.9909288824383164,
+                0.9940130624092888,
+                0.9951015965166908,
+                0.9965529753265603,
+                0.9985486211901307,
+                1.0
+            ],
+            "bin_midpoints": [
+                182.175,
+                546.5250000000001,
+                910.8750000000001,
+                1275.2250000000001,
+                1639.575,
+                2003.9250000000002,
+                2368.2750000000005,
+                2732.625,
+                3096.9750000000004,
+                3461.325,
+                3825.675,
+                4190.025000000001,
+                4554.375,
+                4918.725,
+                5283.075000000001,
+                5647.425,
+                6011.775000000001,
+                6376.125,
+                6740.475,
+                7104.825000000001
+            ]
+        }
+    },
+    "resource_profiles": [
+        {
+            "id": "NOT_SET_profile",
+            "name": "NOT_SET_profile",
+            "resource_list": [
+                {
+                    "id": "NOT_SET",
+                    "name": "NOT_SET",
+                    "amount": 1,
+                    "cost_per_hour": 20,
+                    "calendar": "NOT_SET_profile_calendar",
+                    "assignedTasks": [
+                        "idbe1a12e9-d13a-4e93-bbf5-4b3d2727fa30",
+                        "id41ac643c-1ca1-4169-aef1-a5743b9da449",
+                        "id28a690bf-4798-4926-b006-243ca58dd58b",
+                        "idadf0aa2c-fd32-4714-a18a-994e43b38b56",
+                        "ida35f5a8a-b25f-4d3f-8598-775313f58398",
+                        "ide2414122-1bf6-46bd-9939-07a949f41d03",
+                        "idd75592e4-7303-4535-be1d-1eac12173a00",
+                        "id4f978b3f-72b8-4d60-9f53-109854af9222",
+                        "idc37e2e7a-caa5-437c-8643-3bae6b36665b",
+                        "idf52c4a85-8f58-42b8-b705-f72d5f74f441",
+                        "idfab91d9c-cea6-4e29-b715-163984730198",
+                        "id3ba59f4a-2b55-401f-a78c-351f5b8c1a4a",
+                        "id690fb959-a5b3-45ca-b3a8-1bf37289a1ee",
+                        "id87c73563-957b-426d-b374-59eb66af2688",
+                        "id04c12b4f-9a4e-41f7-8237-a71008129f3a",
+                        "idc0499582-2599-476f-b456-946273a93792",
+                        "id21844fcb-76b5-488e-a5df-f3d1a223f9ed",
+                        "ida37e8a56-a32d-49c0-b97a-8b37b2cad042",
+                        "idb02ab995-f634-4032-ae84-1e068f423437",
+                        "idc9cb2bed-700d-424b-b660-763d9069075f",
+                        "id6dffefff-a9ee-4de9-b182-0b0b37957929",
+                        "idecb47df4-e7b8-45ad-b25d-c2fa666d1852",
+                        "idcfed29b9-7144-42ed-ab2a-d5723f0ab7f2",
+                        "id0368c80e-74f8-496f-8910-406eac23c271",
+                        "id03f8b7a8-415e-452a-ba66-b6e4d81f0741",
+                        "idfc7cf65b-0a57-4652-bd5f-7713792812c7",
+                        "id0ce9cd76-20da-44df-b2db-17dcc17609ee"
+                    ]
+                }
+            ]
+        }
+    ],
+    "resource_calendars": [
+        {
+            "id": "NOT_SET_profile_calendar",
+            "name": "NOT_SET_profile_calendar",
+            "time_periods": [
+                {
+                    "from": "MONDAY",
+                    "to": "MONDAY",
+                    "beginTime": "07:00:00",
+                    "endTime": "23:00:00"
+                },
+                {
+                    "from": "TUESDAY",
+                    "to": "TUESDAY",
+                    "beginTime": "06:00:00",
+                    "endTime": "23:00:00"
+                },
+                {
+                    "from": "WEDNESDAY",
+                    "to": "WEDNESDAY",
+                    "beginTime": "07:00:00",
+                    "endTime": "22:00:00"
+                },
+                {
+                    "from": "THURSDAY",
+                    "to": "THURSDAY",
+                    "beginTime": "07:00:00",
+                    "endTime": "22:00:00"
+                },
+                {
+                    "from": "FRIDAY",
+                    "to": "FRIDAY",
+                    "beginTime": "07:00:00",
+                    "endTime": "22:00:00"
+                },
+                {
+                    "from": "SATURDAY",
+                    "to": "SATURDAY",
+                    "beginTime": "09:00:00",
+                    "endTime": "20:00:00"
+                },
+                {
+                    "from": "SUNDAY",
+                    "to": "SUNDAY",
+                    "beginTime": "07:00:00",
+                    "endTime": "17:00:00"
+                },
+                {
+                    "from": "SUNDAY",
+                    "to": "SUNDAY",
+                    "beginTime": "18:00:00",
+                    "endTime": "22:00:00"
+                }
+            ]
+        }
+    ],
+    "task_resource_distribution": [
+        {
+            "task_id": "ide2414122-1bf6-46bd-9939-07a949f41d03",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idcfed29b9-7144-42ed-ab2a-d5723f0ab7f2",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idfab91d9c-cea6-4e29-b715-163984730198",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idadf0aa2c-fd32-4714-a18a-994e43b38b56",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id41ac643c-1ca1-4169-aef1-a5743b9da449",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "ida37e8a56-a32d-49c0-b97a-8b37b2cad042",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idc0499582-2599-476f-b456-946273a93792",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idfc7cf65b-0a57-4652-bd5f-7713792812c7",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id28a690bf-4798-4926-b006-243ca58dd58b",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id87c73563-957b-426d-b374-59eb66af2688",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idc9cb2bed-700d-424b-b660-763d9069075f",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id03f8b7a8-415e-452a-ba66-b6e4d81f0741",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id6dffefff-a9ee-4de9-b182-0b0b37957929",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idd75592e4-7303-4535-be1d-1eac12173a00",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id4f978b3f-72b8-4d60-9f53-109854af9222",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idb02ab995-f634-4032-ae84-1e068f423437",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idecb47df4-e7b8-45ad-b25d-c2fa666d1852",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idc37e2e7a-caa5-437c-8643-3bae6b36665b",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id3ba59f4a-2b55-401f-a78c-351f5b8c1a4a",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idbe1a12e9-d13a-4e93-bbf5-4b3d2727fa30",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id0368c80e-74f8-496f-8910-406eac23c271",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "idf52c4a85-8f58-42b8-b705-f72d5f74f441",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id04c12b4f-9a4e-41f7-8237-a71008129f3a",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "ida35f5a8a-b25f-4d3f-8598-775313f58398",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id21844fcb-76b5-488e-a5df-f3d1a223f9ed",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id0ce9cd76-20da-44df-b2db-17dcc17609ee",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "task_id": "id690fb959-a5b3-45ca-b3a8-1bf37289a1ee",
+            "resources": [
+                {
+                    "resource_id": "NOT_SET",
+                    "distribution_name": "fix",
+                    "distribution_params": [
+                        {
+                            "value": 0.0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "model_type": "CRISP",
+    "granule_size": {
+        "value": 60,
+        "time_unit": "MINUTES"
+    }
+}

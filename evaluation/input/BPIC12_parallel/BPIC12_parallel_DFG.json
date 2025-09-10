@@ -1,0 +1,737 @@
+{
+     "activities": {
+          "id1bba37a6-59bd-4915-a621-5e5e95de7193": "A_APPROVED",
+          "idb0307f87-a434-4110-a766-8fa234e5d7fb": "W_Complete_preaccepted_appl",
+          "id2ccd8091-6ab8-4e88-8807-a469b38f7c80": "START",
+          "id81c52e86-c259-4851-b443-4c0a84ac286d": "END",
+          "id6d7410ab-2abd-459d-af00-31693499b1c7": "W_Fix_incomplete_submission",
+          "id5d54b87b-f36d-4269-a304-ded18eaecbdc": "A_PREACCEPTED",
+          "id09308593-c6aa-4b04-aedc-f5cee3e110ae": "W_Call_after_offer",
+          "id24c08b05-21f0-44a1-bd71-6d9f847cc5d5": "O_SENT",
+          "idbdbf46b4-2a6b-4bea-94a9-ff7c7056270a": "W_Assess_fraud",
+          "id2ff391d3-c147-401b-99d9-e5727aa05b10": "A_PARTLYSUBMITTED",
+          "idb43c19b1-63b4-4d97-a857-c988dfd43f3f": "A_REGISTERED",
+          "id0d996f71-5778-4fb7-ade7-8bf45b9171db": "A_FINALIZED",
+          "id91ced7c2-20e4-48b2-9239-4006f15b7167": "A_ACCEPTED",
+          "idc3e6cad7-ac32-4794-8f1e-c1b7365a3a29": "W_Call_missing_information",
+          "idf86d60db-0903-4fd0-bca8-a1164b0825e2": "A_DECLINED",
+          "id13358e92-c083-4ac6-8d55-40cd01b8e0df": "O_SELECTED",
+          "idca1bce11-9e69-4f25-b0c9-14e0ed6b9f8b": "O_DECLINED",
+          "id62779d62-cbed-4c0a-8541-b1af08065fc2": "A_CANCELLED",
+          "id3aa3d14a-365e-443c-8e4e-54ee37c96ad4": "A_ACTIVATED",
+          "id4916f35d-182a-4fa0-9d4c-da615d500862": "O_SENT_BACK",
+          "id3b78cb29-638f-415d-82ab-bc014bf583ac": "O_ACCEPTED",
+          "idb7a4a411-ff52-4043-bc2b-bf72307df82b": "W_Assess_application",
+          "id6faa9fea-0e66-460f-9430-be3893a4762a": "O_CANCELLED",
+          "id7558a2a1-6f81-4b17-8371-7f1087b33d3e": "A_SUBMITTED",
+          "id31200946-f09c-47d1-a869-c8e2ba01b505": "O_CREATED"
+     },
+     "elements_bpmn": {
+          "id56f4eccd-3e84-4791-9662-3ac8493a3a67": "exclusiveGateway",
+          "id49dc42cf-df3f-4218-bebd-00ec7f45494a": "exclusiveGateway",
+          "id77a74c9e-97ab-4114-8489-c0924a6de05e": "exclusiveGateway",
+          "id79fcf53c-9253-4313-9bc4-3856720825a4": "exclusiveGateway",
+          "ida7a61c1a-a614-471d-83f7-cc224561c7f2": "exclusiveGateway",
+          "ida27db693-3777-4f95-9f81-1495a650d850": "exclusiveGateway",
+          "id7dd407f3-c420-46f0-8603-9d2deca41a77": "exclusiveGateway",
+          "id1bba37a6-59bd-4915-a621-5e5e95de7193": "task",
+          "idde09cda6-cb26-4a30-8801-38f859e03339": "exclusiveGateway",
+          "id3e685fbd-b7de-4f1f-856c-3fba6a61ed63": "exclusiveGateway",
+          "idb0307f87-a434-4110-a766-8fa234e5d7fb": "task",
+          "id2ccd8091-6ab8-4e88-8807-a469b38f7c80": "task",
+          "idfc290e9b-0b21-43ed-94ea-074c4cb7a066": "exclusiveGateway",
+          "id6dc352f2-a2b1-44be-b0e0-1ce9f5a6f652": "exclusiveGateway",
+          "id81c52e86-c259-4851-b443-4c0a84ac286d": "task",
+          "id7d70688a-81f1-494f-a230-7120ccad4199": "exclusiveGateway",
+          "idba6b99ce-b278-48a9-b6b3-c8e12afb5abd": "parallelGateway",
+          "id24a8cdd9-58ed-4610-8686-d7365cf3b4a3": "exclusiveGateway",
+          "id6d7410ab-2abd-459d-af00-31693499b1c7": "task",
+          "id8edb83a2-226b-43a6-b1eb-f5f9046564e9": "exclusiveGateway",
+          "id1fc43c16-005e-4085-9584-bc25d048cbfa": "exclusiveGateway",
+          "id0289f818-eaec-4735-9fab-2b1edf20f13e": "exclusiveGateway",
+          "id811d5b96-ff2f-44c5-af37-33f8e01bd2c6": "exclusiveGateway",
+          "id2f9846c8-ad28-46b9-bbcb-bd51f0cfe8fe": "exclusiveGateway",
+          "id4c4bc39b-83e1-4626-8498-4632d7b69b6b": "exclusiveGateway",
+          "id5d54b87b-f36d-4269-a304-ded18eaecbdc": "task",
+          "id09308593-c6aa-4b04-aedc-f5cee3e110ae": "task",
+          "id11739ae3-4442-4716-ae9b-b6589948badf": "exclusiveGateway",
+          "id24c08b05-21f0-44a1-bd71-6d9f847cc5d5": "task",
+          "idd3db12c7-d10d-4b05-ade3-f2a114ff344e": "exclusiveGateway",
+          "id92265f79-a62c-4524-8b1b-965c4399d84f": "exclusiveGateway",
+          "idd793f40f-08de-49bf-ad04-1e712300ed8e": "exclusiveGateway",
+          "id7739148e-5b52-4257-ac8b-62b72cc8f948": "exclusiveGateway",
+          "id32de3ecc-37b5-4a0c-8c47-edb1394b0b35": "parallelGateway",
+          "idd3bd6eb1-9192-4cf7-8c69-e0908054611b": "exclusiveGateway",
+          "idbdbf46b4-2a6b-4bea-94a9-ff7c7056270a": "task",
+          "idfc69ea29-4fae-4806-9f6b-4784a7bff741": "exclusiveGateway",
+          "id12de6114-3e05-4005-b34d-caa7c5d11357": "exclusiveGateway",
+          "id2ff391d3-c147-401b-99d9-e5727aa05b10": "task",
+          "idb43c19b1-63b4-4d97-a857-c988dfd43f3f": "task",
+          "ide1cade0c-1583-447d-b431-3c160e7314b4": "endEvent",
+          "id0d996f71-5778-4fb7-ade7-8bf45b9171db": "task",
+          "id91ced7c2-20e4-48b2-9239-4006f15b7167": "task",
+          "idfadc88e9-9a11-4d18-b46d-e3c043bd604e": "parallelGateway",
+          "id1c172d15-cead-4c64-bc41-9d25b445ce20": "exclusiveGateway",
+          "idc3e6cad7-ac32-4794-8f1e-c1b7365a3a29": "task",
+          "idf64a66d0-b34e-4d5c-8ea0-176d3c8c9f7d": "exclusiveGateway",
+          "id68db4504-d240-4dd2-928d-975b637a8da4": "exclusiveGateway",
+          "id245ec17d-f109-4edc-bded-ba2573b2ca6b": "exclusiveGateway",
+          "idfcc38c53-8bfb-4950-aded-af54a37cc08f": "exclusiveGateway",
+          "idf86d60db-0903-4fd0-bca8-a1164b0825e2": "task",
+          "id13358e92-c083-4ac6-8d55-40cd01b8e0df": "task",
+          "id93f10fb2-314f-4e30-8663-cbfe71be4a58": "exclusiveGateway",
+          "id2934b5e6-c0ba-4c2f-b79a-a1b5e358dc13": "exclusiveGateway",
+          "idca1bce11-9e69-4f25-b0c9-14e0ed6b9f8b": "task",
+          "id62779d62-cbed-4c0a-8541-b1af08065fc2": "task",
+          "id2b50cdbf-af0f-482d-9d42-bd44a6128554": "exclusiveGateway",
+          "id51b10c5a-ad0f-4626-87d5-6502a7e72b19": "exclusiveGateway",
+          "id6e9855bc-9649-455d-b3dc-d09b70e51c08": "exclusiveGateway",
+          "id3aa3d14a-365e-443c-8e4e-54ee37c96ad4": "task",
+          "id4916f35d-182a-4fa0-9d4c-da615d500862": "task",
+          "id0f07dc0f-08bd-4319-a855-556bd7438c2e": "exclusiveGateway",
+          "idb5d5359b-32de-4706-9051-2b04d9bd6927": "exclusiveGateway",
+          "id3b78cb29-638f-415d-82ab-bc014bf583ac": "task",
+          "idf0ea57c4-4846-45c1-955e-2a1b43d4c10d": "exclusiveGateway",
+          "idb7a4a411-ff52-4043-bc2b-bf72307df82b": "task",
+          "id0bb8cfc8-bdcd-4880-9035-bc67a41f1913": "exclusiveGateway",
+          "id1c03bb96-e4a4-4564-a713-453e1993d6a5": "exclusiveGateway",
+          "id6e2a1b4d-7915-4983-9250-db445181ceea": "exclusiveGateway",
+          "id6faa9fea-0e66-460f-9430-be3893a4762a": "task",
+          "idf52b2dad-b08b-4d99-a1f4-4bbbd3f7c0ac": "exclusiveGateway",
+          "idfd30340a-b6f2-46c8-b041-df229cdda940": "parallelGateway",
+          "idfa99e44e-4cbd-4761-9606-67230fb7b0ca": "exclusiveGateway",
+          "idd986fe17-b6a3-4a96-a0a4-5dae6e6628ac": "exclusiveGateway",
+          "id99ed291d-a72f-4879-9603-50faa6431199": "exclusiveGateway",
+          "id6daa4296-54b0-416b-a55b-d41ceca0afb5": "parallelGateway",
+          "ide5f03722-52c9-4a1c-bb6f-14d0115ab8f5": "exclusiveGateway",
+          "idc56be46a-1004-4f24-8422-afae0891215c": "startEvent",
+          "id7558a2a1-6f81-4b17-8371-7f1087b33d3e": "task",
+          "id31200946-f09c-47d1-a869-c8e2ba01b505": "task",
+          "id1e57d75c-712d-4f5e-91f6-e4858f6cee96": "parallelGateway"
+     },
+     "DFG": {
+          "idf64a66d0-b34e-4d5c-8ea0-176d3c8c9f7d": [
+               "id51b10c5a-ad0f-4626-87d5-6502a7e72b19",
+               "id77a74c9e-97ab-4114-8489-c0924a6de05e"
+          ],
+          "idfd30340a-b6f2-46c8-b041-df229cdda940": [
+               "id4c4bc39b-83e1-4626-8498-4632d7b69b6b"
+          ],
+          "id3e685fbd-b7de-4f1f-856c-3fba6a61ed63": [
+               "id8edb83a2-226b-43a6-b1eb-f5f9046564e9",
+               "id7739148e-5b52-4257-ac8b-62b72cc8f948"
+          ],
+          "id49dc42cf-df3f-4218-bebd-00ec7f45494a": [
+               "id51b10c5a-ad0f-4626-87d5-6502a7e72b19",
+               "id77a74c9e-97ab-4114-8489-c0924a6de05e"
+          ],
+          "idd3db12c7-d10d-4b05-ade3-f2a114ff344e": [
+               "id7d70688a-81f1-494f-a230-7120ccad4199",
+               "id245ec17d-f109-4edc-bded-ba2573b2ca6b"
+          ],
+          "idc56be46a-1004-4f24-8422-afae0891215c": [
+               "id2ccd8091-6ab8-4e88-8807-a469b38f7c80"
+          ],
+          "id4c4bc39b-83e1-4626-8498-4632d7b69b6b": [
+               "id7d70688a-81f1-494f-a230-7120ccad4199"
+          ],
+          "id8edb83a2-226b-43a6-b1eb-f5f9046564e9": [
+               "id6faa9fea-0e66-460f-9430-be3893a4762a"
+          ],
+          "id6faa9fea-0e66-460f-9430-be3893a4762a": [
+               "id3e685fbd-b7de-4f1f-856c-3fba6a61ed63"
+          ],
+          "id1c03bb96-e4a4-4564-a713-453e1993d6a5": [
+               "id8edb83a2-226b-43a6-b1eb-f5f9046564e9",
+               "id7739148e-5b52-4257-ac8b-62b72cc8f948"
+          ],
+          "id6dc352f2-a2b1-44be-b0e0-1ce9f5a6f652": [
+               "idfadc88e9-9a11-4d18-b46d-e3c043bd604e",
+               "id7dd407f3-c420-46f0-8603-9d2deca41a77"
+          ],
+          "id6e2a1b4d-7915-4983-9250-db445181ceea": [
+               "idd986fe17-b6a3-4a96-a0a4-5dae6e6628ac",
+               "id5d54b87b-f36d-4269-a304-ded18eaecbdc"
+          ],
+          "id51b10c5a-ad0f-4626-87d5-6502a7e72b19": [
+               "idd3db12c7-d10d-4b05-ade3-f2a114ff344e"
+          ],
+          "id93f10fb2-314f-4e30-8663-cbfe71be4a58": [
+               "id1fc43c16-005e-4085-9584-bc25d048cbfa",
+               "id2934b5e6-c0ba-4c2f-b79a-a1b5e358dc13"
+          ],
+          "id5d54b87b-f36d-4269-a304-ded18eaecbdc": [
+               "id1fc43c16-005e-4085-9584-bc25d048cbfa"
+          ],
+          "idfa99e44e-4cbd-4761-9606-67230fb7b0ca": [
+               "id6daa4296-54b0-416b-a55b-d41ceca0afb5",
+               "id24a8cdd9-58ed-4610-8686-d7365cf3b4a3"
+          ],
+          "idde09cda6-cb26-4a30-8801-38f859e03339": [
+               "idf0ea57c4-4846-45c1-955e-2a1b43d4c10d",
+               "id62779d62-cbed-4c0a-8541-b1af08065fc2"
+          ],
+          "id7d70688a-81f1-494f-a230-7120ccad4199": [
+               "id6dc352f2-a2b1-44be-b0e0-1ce9f5a6f652"
+          ],
+          "id7739148e-5b52-4257-ac8b-62b72cc8f948": [
+               "id1e57d75c-712d-4f5e-91f6-e4858f6cee96"
+          ],
+          "idfadc88e9-9a11-4d18-b46d-e3c043bd604e": [
+               "id92265f79-a62c-4524-8b1b-965c4399d84f"
+          ],
+          "id4916f35d-182a-4fa0-9d4c-da615d500862": [
+               "id11739ae3-4442-4716-ae9b-b6589948badf"
+          ],
+          "ide5f03722-52c9-4a1c-bb6f-14d0115ab8f5": [
+               "id92265f79-a62c-4524-8b1b-965c4399d84f",
+               "idba6b99ce-b278-48a9-b6b3-c8e12afb5abd"
+          ],
+          "idf52b2dad-b08b-4d99-a1f4-4bbbd3f7c0ac": [
+               "id4c4bc39b-83e1-4626-8498-4632d7b69b6b",
+               "id32de3ecc-37b5-4a0c-8c47-edb1394b0b35"
+          ],
+          "id2ff391d3-c147-401b-99d9-e5727aa05b10": [
+               "id2f9846c8-ad28-46b9-bbcb-bd51f0cfe8fe"
+          ],
+          "id1e57d75c-712d-4f5e-91f6-e4858f6cee96": [
+               "id24a8cdd9-58ed-4610-8686-d7365cf3b4a3"
+          ],
+          "idb0307f87-a434-4110-a766-8fa234e5d7fb": [
+               "id93f10fb2-314f-4e30-8663-cbfe71be4a58"
+          ],
+          "id245ec17d-f109-4edc-bded-ba2573b2ca6b": [
+               "id4916f35d-182a-4fa0-9d4c-da615d500862",
+               "id11739ae3-4442-4716-ae9b-b6589948badf"
+          ],
+          "id62779d62-cbed-4c0a-8541-b1af08065fc2": [
+               "idf0ea57c4-4846-45c1-955e-2a1b43d4c10d"
+          ],
+          "idb5d5359b-32de-4706-9051-2b04d9bd6927": [
+               "idd3bd6eb1-9192-4cf7-8c69-e0908054611b",
+               "idf86d60db-0903-4fd0-bca8-a1164b0825e2",
+               "id3b78cb29-638f-415d-82ab-bc014bf583ac"
+          ],
+          "id6daa4296-54b0-416b-a55b-d41ceca0afb5": [
+               "ide5f03722-52c9-4a1c-bb6f-14d0115ab8f5",
+               "id1c03bb96-e4a4-4564-a713-453e1993d6a5"
+          ],
+          "id92265f79-a62c-4524-8b1b-965c4399d84f": [
+               "idde09cda6-cb26-4a30-8801-38f859e03339"
+          ],
+          "id79fcf53c-9253-4313-9bc4-3856720825a4": [
+               "idd986fe17-b6a3-4a96-a0a4-5dae6e6628ac"
+          ],
+          "id0d996f71-5778-4fb7-ade7-8bf45b9171db": [
+               "idfadc88e9-9a11-4d18-b46d-e3c043bd604e"
+          ],
+          "idba6b99ce-b278-48a9-b6b3-c8e12afb5abd": [
+               "id0d996f71-5778-4fb7-ade7-8bf45b9171db",
+               "id7dd407f3-c420-46f0-8603-9d2deca41a77"
+          ],
+          "idf0ea57c4-4846-45c1-955e-2a1b43d4c10d": [
+               "id1e57d75c-712d-4f5e-91f6-e4858f6cee96"
+          ],
+          "id11739ae3-4442-4716-ae9b-b6589948badf": [
+               "idf52b2dad-b08b-4d99-a1f4-4bbbd3f7c0ac"
+          ],
+          "id0289f818-eaec-4735-9fab-2b1edf20f13e": [
+               "id811d5b96-ff2f-44c5-af37-33f8e01bd2c6",
+               "idfd30340a-b6f2-46c8-b041-df229cdda940"
+          ],
+          "id1fc43c16-005e-4085-9584-bc25d048cbfa": [
+               "idb0307f87-a434-4110-a766-8fa234e5d7fb"
+          ],
+          "id811d5b96-ff2f-44c5-af37-33f8e01bd2c6": [
+               "idc3e6cad7-ac32-4794-8f1e-c1b7365a3a29"
+          ],
+          "id24a8cdd9-58ed-4610-8686-d7365cf3b4a3": [
+               "id0f07dc0f-08bd-4319-a855-556bd7438c2e"
+          ],
+          "id7dd407f3-c420-46f0-8603-9d2deca41a77": [
+               "id13358e92-c083-4ac6-8d55-40cd01b8e0df"
+          ],
+          "idc3e6cad7-ac32-4794-8f1e-c1b7365a3a29": [
+               "id0289f818-eaec-4735-9fab-2b1edf20f13e"
+          ],
+          "id91ced7c2-20e4-48b2-9239-4006f15b7167": [
+               "id79fcf53c-9253-4313-9bc4-3856720825a4"
+          ],
+          "id32de3ecc-37b5-4a0c-8c47-edb1394b0b35": [
+               "id811d5b96-ff2f-44c5-af37-33f8e01bd2c6",
+               "idfcc38c53-8bfb-4950-aded-af54a37cc08f"
+          ],
+          "idfc290e9b-0b21-43ed-94ea-074c4cb7a066": [
+               "id68db4504-d240-4dd2-928d-975b637a8da4",
+               "idca1bce11-9e69-4f25-b0c9-14e0ed6b9f8b"
+          ],
+          "id2f9846c8-ad28-46b9-bbcb-bd51f0cfe8fe": [
+               "id0f07dc0f-08bd-4319-a855-556bd7438c2e",
+               "idfc69ea29-4fae-4806-9f6b-4784a7bff741"
+          ],
+          "id13358e92-c083-4ac6-8d55-40cd01b8e0df": [
+               "id31200946-f09c-47d1-a869-c8e2ba01b505"
+          ],
+          "idd986fe17-b6a3-4a96-a0a4-5dae6e6628ac": [
+               "idfa99e44e-4cbd-4761-9606-67230fb7b0ca"
+          ],
+          "idfcc38c53-8bfb-4950-aded-af54a37cc08f": [
+               "id99ed291d-a72f-4879-9603-50faa6431199",
+               "idd793f40f-08de-49bf-ad04-1e712300ed8e"
+          ],
+          "id0f07dc0f-08bd-4319-a855-556bd7438c2e": [
+               "idb5d5359b-32de-4706-9051-2b04d9bd6927"
+          ],
+          "id31200946-f09c-47d1-a869-c8e2ba01b505": [
+               "id24c08b05-21f0-44a1-bd71-6d9f847cc5d5"
+          ],
+          "id56f4eccd-3e84-4791-9662-3ac8493a3a67": [
+               "idd793f40f-08de-49bf-ad04-1e712300ed8e",
+               "id99ed291d-a72f-4879-9603-50faa6431199"
+          ],
+          "id24c08b05-21f0-44a1-bd71-6d9f847cc5d5": [
+               "id49dc42cf-df3f-4218-bebd-00ec7f45494a"
+          ],
+          "idd793f40f-08de-49bf-ad04-1e712300ed8e": [
+               "idb7a4a411-ff52-4043-bc2b-bf72307df82b"
+          ],
+          "idca1bce11-9e69-4f25-b0c9-14e0ed6b9f8b": [
+               "id68db4504-d240-4dd2-928d-975b637a8da4"
+          ],
+          "id2ccd8091-6ab8-4e88-8807-a469b38f7c80": [
+               "id7558a2a1-6f81-4b17-8371-7f1087b33d3e"
+          ],
+          "idb7a4a411-ff52-4043-bc2b-bf72307df82b": [
+               "id56f4eccd-3e84-4791-9662-3ac8493a3a67"
+          ],
+          "id77a74c9e-97ab-4114-8489-c0924a6de05e": [
+               "id09308593-c6aa-4b04-aedc-f5cee3e110ae"
+          ],
+          "idf86d60db-0903-4fd0-bca8-a1164b0825e2": [
+               "idfc290e9b-0b21-43ed-94ea-074c4cb7a066"
+          ],
+          "id7558a2a1-6f81-4b17-8371-7f1087b33d3e": [
+               "id2ff391d3-c147-401b-99d9-e5727aa05b10"
+          ],
+          "id09308593-c6aa-4b04-aedc-f5cee3e110ae": [
+               "idf64a66d0-b34e-4d5c-8ea0-176d3c8c9f7d"
+          ],
+          "id68db4504-d240-4dd2-928d-975b637a8da4": [
+               "idd3bd6eb1-9192-4cf7-8c69-e0908054611b"
+          ],
+          "id99ed291d-a72f-4879-9603-50faa6431199": [
+               "idfd30340a-b6f2-46c8-b041-df229cdda940"
+          ],
+          "id2934b5e6-c0ba-4c2f-b79a-a1b5e358dc13": [
+               "id91ced7c2-20e4-48b2-9239-4006f15b7167",
+               "id79fcf53c-9253-4313-9bc4-3856720825a4"
+          ],
+          "id81c52e86-c259-4851-b443-4c0a84ac286d": [
+               "ide1cade0c-1583-447d-b431-3c160e7314b4"
+          ],
+          "id3aa3d14a-365e-443c-8e4e-54ee37c96ad4": [
+               "idd3bd6eb1-9192-4cf7-8c69-e0908054611b"
+          ],
+          "id3b78cb29-638f-415d-82ab-bc014bf583ac": [
+               "id1bba37a6-59bd-4915-a621-5e5e95de7193"
+          ],
+          "id6e9855bc-9649-455d-b3dc-d09b70e51c08": [
+               "id6d7410ab-2abd-459d-af00-31693499b1c7"
+          ],
+          "id1c172d15-cead-4c64-bc41-9d25b445ce20": [
+               "id2b50cdbf-af0f-482d-9d42-bd44a6128554",
+               "id6e9855bc-9649-455d-b3dc-d09b70e51c08"
+          ],
+          "id1bba37a6-59bd-4915-a621-5e5e95de7193": [
+               "idb43c19b1-63b4-4d97-a857-c988dfd43f3f"
+          ],
+          "idb43c19b1-63b4-4d97-a857-c988dfd43f3f": [
+               "id3aa3d14a-365e-443c-8e4e-54ee37c96ad4"
+          ],
+          "ida7a61c1a-a614-471d-83f7-cc224561c7f2": [
+               "id1c172d15-cead-4c64-bc41-9d25b445ce20"
+          ],
+          "idd3bd6eb1-9192-4cf7-8c69-e0908054611b": [
+               "id81c52e86-c259-4851-b443-4c0a84ac286d"
+          ],
+          "id6d7410ab-2abd-459d-af00-31693499b1c7": [
+               "id0bb8cfc8-bdcd-4880-9035-bc67a41f1913"
+          ],
+          "id0bb8cfc8-bdcd-4880-9035-bc67a41f1913": [
+               "id2b50cdbf-af0f-482d-9d42-bd44a6128554",
+               "id6e9855bc-9649-455d-b3dc-d09b70e51c08"
+          ],
+          "idfc69ea29-4fae-4806-9f6b-4784a7bff741": [
+               "ida7a61c1a-a614-471d-83f7-cc224561c7f2",
+               "id12de6114-3e05-4005-b34d-caa7c5d11357"
+          ],
+          "ida27db693-3777-4f95-9f81-1495a650d850": [
+               "ida7a61c1a-a614-471d-83f7-cc224561c7f2",
+               "id12de6114-3e05-4005-b34d-caa7c5d11357"
+          ],
+          "idbdbf46b4-2a6b-4bea-94a9-ff7c7056270a": [
+               "ida27db693-3777-4f95-9f81-1495a650d850"
+          ],
+          "id12de6114-3e05-4005-b34d-caa7c5d11357": [
+               "idbdbf46b4-2a6b-4bea-94a9-ff7c7056270a"
+          ],
+          "id2b50cdbf-af0f-482d-9d42-bd44a6128554": [
+               "id6e2a1b4d-7915-4983-9250-db445181ceea"
+          ]
+     },
+     "sequenceFlow_target": {
+          "id8fe4b643-0a11-4be0-b9a5-e75d6aecec52": "id51b10c5a-ad0f-4626-87d5-6502a7e72b19",
+          "ide82f412f-8bc0-404b-ad8b-56f34192795d": "id4c4bc39b-83e1-4626-8498-4632d7b69b6b",
+          "idc8d17cc9-129e-42f5-b99a-3eb9309fc8d0": "id8edb83a2-226b-43a6-b1eb-f5f9046564e9",
+          "idff0d0015-0658-4910-9bab-bea8d673a191": "id51b10c5a-ad0f-4626-87d5-6502a7e72b19",
+          "idd1b40a1f-2756-40d5-8207-df108a908206": "id7d70688a-81f1-494f-a230-7120ccad4199",
+          "id7399ede2-de67-4be0-866e-1c806a645702": "id2ccd8091-6ab8-4e88-8807-a469b38f7c80",
+          "id283a7a94-b10f-47b7-a9c4-112f0c005a9e": "id7d70688a-81f1-494f-a230-7120ccad4199",
+          "idc5e4855e-c712-4798-9bec-3769889dc629": "id6faa9fea-0e66-460f-9430-be3893a4762a",
+          "idde63738e-86d9-4602-b1a6-079fc3c2932e": "id77a74c9e-97ab-4114-8489-c0924a6de05e",
+          "id23ab388b-b313-4bad-97b9-545030d66900": "id3e685fbd-b7de-4f1f-856c-3fba6a61ed63",
+          "idc7724f1a-c354-4866-a04b-c179844cd96a": "id8edb83a2-226b-43a6-b1eb-f5f9046564e9",
+          "idaf27d78b-cdc3-49f9-b90e-ab4d97ab24b1": "idfadc88e9-9a11-4d18-b46d-e3c043bd604e",
+          "iddf1c8166-3a92-40f7-89ff-a0926027e945": "idd986fe17-b6a3-4a96-a0a4-5dae6e6628ac",
+          "idec9bdb65-6f25-4026-a91a-33df3a466c9e": "idd3db12c7-d10d-4b05-ade3-f2a114ff344e",
+          "id1966d486-90f6-4d7c-8094-a31e30e8b879": "id1fc43c16-005e-4085-9584-bc25d048cbfa",
+          "id004fa2f3-84da-4f12-b5da-02d239587e37": "id1fc43c16-005e-4085-9584-bc25d048cbfa",
+          "ida653ab5f-ded4-462d-8b94-1ffac11bde41": "id7739148e-5b52-4257-ac8b-62b72cc8f948",
+          "id49b4fd4e-8f67-4897-87fc-b29ddcb375eb": "id6daa4296-54b0-416b-a55b-d41ceca0afb5",
+          "id556535f8-1b29-46e2-87ba-9a2ad1735b44": "idf0ea57c4-4846-45c1-955e-2a1b43d4c10d",
+          "id0759703a-76a0-4522-b79b-ebee960d8a82": "id6dc352f2-a2b1-44be-b0e0-1ce9f5a6f652",
+          "idaa920303-ed23-4364-b8f9-0d7beddff329": "id1e57d75c-712d-4f5e-91f6-e4858f6cee96",
+          "idddba7226-43b7-4d98-80ba-7383d279c8c3": "id92265f79-a62c-4524-8b1b-965c4399d84f",
+          "id11ce154c-b12d-4b20-a747-db4c69e94771": "id11739ae3-4442-4716-ae9b-b6589948badf",
+          "id817d0f48-e806-43d3-8479-da5a774a8c32": "id92265f79-a62c-4524-8b1b-965c4399d84f",
+          "id114eff70-3514-48a7-80c0-89c944bd56ba": "id4c4bc39b-83e1-4626-8498-4632d7b69b6b",
+          "id52d13b67-db7d-4643-81a0-c145828b0eee": "id245ec17d-f109-4edc-bded-ba2573b2ca6b",
+          "id9433e42c-81c3-428f-b957-2d32ceaaf9fb": "id2f9846c8-ad28-46b9-bbcb-bd51f0cfe8fe",
+          "id68c08faa-13c5-41e4-8919-f05146610465": "id24a8cdd9-58ed-4610-8686-d7365cf3b4a3",
+          "idbbc5286d-9d39-4b5e-9169-b40283928ea4": "id93f10fb2-314f-4e30-8663-cbfe71be4a58",
+          "id79d0197c-edf9-41d8-8726-7b852af1e123": "id4916f35d-182a-4fa0-9d4c-da615d500862",
+          "id99647031-23eb-4282-b0c4-54a81b18c68f": "id11739ae3-4442-4716-ae9b-b6589948badf",
+          "iddc4f66f8-71fd-4519-b9ae-069baf188b1e": "idf0ea57c4-4846-45c1-955e-2a1b43d4c10d",
+          "id2d2f916a-0a52-475e-9206-e20274a554ab": "idd3bd6eb1-9192-4cf7-8c69-e0908054611b",
+          "id181c41b1-c72d-4f5b-9a5b-c11277bfad7d": "ide5f03722-52c9-4a1c-bb6f-14d0115ab8f5",
+          "id1c368c14-1d15-44cb-ade4-58d829f8144e": "idde09cda6-cb26-4a30-8801-38f859e03339",
+          "ida1dfd07c-9670-4c78-9894-6fd6325ebe91": "idd986fe17-b6a3-4a96-a0a4-5dae6e6628ac",
+          "idf5b0a293-e8c1-42a7-b49a-c559db439372": "idfadc88e9-9a11-4d18-b46d-e3c043bd604e",
+          "idfcccd6ea-604f-4612-9be2-dd0a9e7fe7f3": "id0d996f71-5778-4fb7-ade7-8bf45b9171db",
+          "id9ff5fa08-c850-403b-8e70-f396aeb071a7": "id62779d62-cbed-4c0a-8541-b1af08065fc2",
+          "idcc2c0476-cae5-47c6-9291-f139cec94b0d": "id1e57d75c-712d-4f5e-91f6-e4858f6cee96",
+          "ide899daed-c4f3-4909-9282-23cfe3429367": "idf52b2dad-b08b-4d99-a1f4-4bbbd3f7c0ac",
+          "idd9e4b1db-d568-4f4d-a8c1-a5123deec5fc": "id811d5b96-ff2f-44c5-af37-33f8e01bd2c6",
+          "id4405cef7-7b93-4af7-ae91-b5a45ef6d414": "id5d54b87b-f36d-4269-a304-ded18eaecbdc",
+          "id75b1c44b-3191-41d6-b80c-5cdf74084ce0": "idba6b99ce-b278-48a9-b6b3-c8e12afb5abd",
+          "id066178e8-6fb0-4b64-a683-e8c733fa7618": "idb0307f87-a434-4110-a766-8fa234e5d7fb",
+          "id99486d03-e243-4f74-8e8c-811bb4e97683": "idc3e6cad7-ac32-4794-8f1e-c1b7365a3a29",
+          "id010e2351-15ed-4976-bddc-a4f5731db87e": "id7739148e-5b52-4257-ac8b-62b72cc8f948",
+          "id6f56b4ab-ddc3-4f44-b1e9-f9e6d5e896b2": "id7dd407f3-c420-46f0-8603-9d2deca41a77",
+          "id0c5b6eae-f965-4aa1-ba2c-2ead1d2f42e6": "id2934b5e6-c0ba-4c2f-b79a-a1b5e358dc13",
+          "id076fef9c-20be-4900-8e21-187a2ea076df": "id0f07dc0f-08bd-4319-a855-556bd7438c2e",
+          "idbfdfdfd6-2cca-4020-92fe-1651c3985c80": "id1c03bb96-e4a4-4564-a713-453e1993d6a5",
+          "id8ffed17d-ddbb-452f-83c1-faf042681a7f": "id32de3ecc-37b5-4a0c-8c47-edb1394b0b35",
+          "id8f97cde3-4095-4286-869e-834d039ef2e1": "id13358e92-c083-4ac6-8d55-40cd01b8e0df",
+          "id26ed5695-ab75-45f8-90bc-872751a893fc": "id0289f818-eaec-4735-9fab-2b1edf20f13e",
+          "ida14fd6b7-22a6-4aa6-8604-5137fbf7be8e": "id79fcf53c-9253-4313-9bc4-3856720825a4",
+          "idf8622615-0b5f-473b-b3cf-a8b559b0a9f5": "id811d5b96-ff2f-44c5-af37-33f8e01bd2c6",
+          "id72d1c6d5-a955-4f78-ade9-77a8920b88f9": "id68db4504-d240-4dd2-928d-975b637a8da4",
+          "idd73e6d6f-94d5-429d-bd42-9d0308e2e846": "id0f07dc0f-08bd-4319-a855-556bd7438c2e",
+          "ide27673a9-b394-46cd-9789-1bf7f83c56c2": "idfd30340a-b6f2-46c8-b041-df229cdda940",
+          "idf24e6019-5f5a-485b-b4d2-557b6714308a": "idfc69ea29-4fae-4806-9f6b-4784a7bff741",
+          "id5f03885e-7b70-4cdd-b4c3-c597f788306f": "id31200946-f09c-47d1-a869-c8e2ba01b505",
+          "id3beedd1f-4c44-45b6-aa48-dfa70fadecb6": "idfa99e44e-4cbd-4761-9606-67230fb7b0ca",
+          "id1c9b6074-e10b-4eb2-bb27-3a2221396c0d": "id99ed291d-a72f-4879-9603-50faa6431199",
+          "id8cb5218a-71ba-4a48-a9d9-dba9fad4f960": "idb5d5359b-32de-4706-9051-2b04d9bd6927",
+          "id6580f50c-61a5-4870-b68e-92442357a446": "id24c08b05-21f0-44a1-bd71-6d9f847cc5d5",
+          "id8ea35f0d-0579-4f30-94d1-73f905894221": "idd793f40f-08de-49bf-ad04-1e712300ed8e",
+          "id6de7b908-c654-464a-9ddf-d261b017d3f8": "idfcc38c53-8bfb-4950-aded-af54a37cc08f",
+          "id7a6cb22f-6f0b-41db-b9c1-19ebae79639a": "idf86d60db-0903-4fd0-bca8-a1164b0825e2",
+          "idedaa76f9-9d6f-4765-8400-b7aabffb52ef": "id49dc42cf-df3f-4218-bebd-00ec7f45494a",
+          "id7b117403-8532-47c3-a127-acf19a720d81": "idb7a4a411-ff52-4043-bc2b-bf72307df82b",
+          "id8ae57790-0002-4fa8-99ea-11a38116a886": "id68db4504-d240-4dd2-928d-975b637a8da4",
+          "id87f0fabb-b941-497a-b365-fcb284c40fac": "id7558a2a1-6f81-4b17-8371-7f1087b33d3e",
+          "id78458ec4-cc6b-4481-9319-8c9f94cfd014": "id56f4eccd-3e84-4791-9662-3ac8493a3a67",
+          "id8453b5e3-def5-4048-9a5a-6e141d50433e": "id09308593-c6aa-4b04-aedc-f5cee3e110ae",
+          "idcaadcb28-4448-44f2-a815-68127fd9a32b": "idfc290e9b-0b21-43ed-94ea-074c4cb7a066",
+          "id0bd42164-f306-46eb-b50a-a4b94d29a091": "idd793f40f-08de-49bf-ad04-1e712300ed8e",
+          "idef5f06ac-ac61-4985-947a-d86a665fdbe5": "id2ff391d3-c147-401b-99d9-e5727aa05b10",
+          "idcaedef3c-d5fb-40fe-863f-8faa1bd6f107": "idf64a66d0-b34e-4d5c-8ea0-176d3c8c9f7d",
+          "id538164f2-14a8-4598-965a-6a912fa6bf1c": "id99ed291d-a72f-4879-9603-50faa6431199",
+          "id678472e0-b902-4997-8533-e91b3d8a076a": "idd3bd6eb1-9192-4cf7-8c69-e0908054611b",
+          "id5047dcb0-51d4-4d2b-b792-5541afed99c7": "id77a74c9e-97ab-4114-8489-c0924a6de05e",
+          "idd7d3328d-b480-4e05-834a-26a0063e7767": "idca1bce11-9e69-4f25-b0c9-14e0ed6b9f8b",
+          "id86b62c8c-e331-4517-8436-4d11681705e6": "id7dd407f3-c420-46f0-8603-9d2deca41a77",
+          "id5cf87163-0f5f-4e1f-97e1-c04099be9dea": "idfd30340a-b6f2-46c8-b041-df229cdda940",
+          "id9cec2ba7-42ee-42f4-91fc-c7fca3dcd743": "id91ced7c2-20e4-48b2-9239-4006f15b7167",
+          "id682b617a-f451-40f4-abff-b232ea50b420": "ide1cade0c-1583-447d-b431-3c160e7314b4",
+          "id1d2d141d-4cee-4f87-8e6f-cdf4ab8ce54f": "idd3bd6eb1-9192-4cf7-8c69-e0908054611b",
+          "ida6a99273-b0d8-4d0c-be3c-f34c5dee24b7": "id3b78cb29-638f-415d-82ab-bc014bf583ac",
+          "id65cfdf72-028a-4bd1-9fa8-a1525ab987bd": "id1bba37a6-59bd-4915-a621-5e5e95de7193",
+          "id61d47174-c5ec-4016-9d5c-e7e8c3aeaf92": "id79fcf53c-9253-4313-9bc4-3856720825a4",
+          "id8edeec4c-c957-432c-b32e-945f1d85b4f8": "id6d7410ab-2abd-459d-af00-31693499b1c7",
+          "id01cb60d6-cb47-435e-b79b-3d099f95ce17": "id2b50cdbf-af0f-482d-9d42-bd44a6128554",
+          "id3b8d9e14-c7d8-40a1-bde3-d5e4cd6da755": "idb43c19b1-63b4-4d97-a857-c988dfd43f3f",
+          "idd3f412bc-31fa-46e1-ae5f-7a00174d06b4": "id3aa3d14a-365e-443c-8e4e-54ee37c96ad4",
+          "id2952b66f-8d9e-405c-9191-77f7dd7e3f49": "id1c172d15-cead-4c64-bc41-9d25b445ce20",
+          "id9566feda-cb78-46d0-aba0-6929941f993e": "id81c52e86-c259-4851-b443-4c0a84ac286d",
+          "idf50559f6-2264-421b-8a20-608e8e349544": "id0bb8cfc8-bdcd-4880-9035-bc67a41f1913",
+          "id810fd83b-538c-4fd5-a683-f04ae6603ff6": "id2b50cdbf-af0f-482d-9d42-bd44a6128554",
+          "idb960c02a-4af8-41cf-b1c2-ddca84b3e60b": "id6e9855bc-9649-455d-b3dc-d09b70e51c08",
+          "idb0880736-f04c-44e1-b005-9e8a4125ef66": "id6e9855bc-9649-455d-b3dc-d09b70e51c08",
+          "id44ffe080-44be-43bb-9e97-fd33fad2fb5c": "ida7a61c1a-a614-471d-83f7-cc224561c7f2",
+          "id3d7a39ef-0bda-4a8b-9f1f-d96df1e97089": "ida7a61c1a-a614-471d-83f7-cc224561c7f2",
+          "id93fb5801-5c61-48ba-b6bd-a18921e64375": "id12de6114-3e05-4005-b34d-caa7c5d11357",
+          "id877d2421-2359-4901-a5a9-7696717b95ea": "ida27db693-3777-4f95-9f81-1495a650d850",
+          "id6cdffe47-f343-47f3-861f-bbefd1fe395e": "id12de6114-3e05-4005-b34d-caa7c5d11357",
+          "id6fe7ada6-3663-4d4a-9561-002f21c62c67": "idbdbf46b4-2a6b-4bea-94a9-ff7c7056270a",
+          "id5e99fafa-3843-44a6-84d4-7de6e529feaa": "id24a8cdd9-58ed-4610-8686-d7365cf3b4a3",
+          "idc27d4e99-505f-40f0-b474-c10d7f54128a": "id6e2a1b4d-7915-4983-9250-db445181ceea"
+     },
+     "start_node": "id2ccd8091-6ab8-4e88-8807-a469b38f7c80",
+     "end_node": "id81c52e86-c259-4851-b443-4c0a84ac286d",
+     "act_node": {
+          "A_APPROVED": "id1bba37a6-59bd-4915-a621-5e5e95de7193",
+          "W_Complete_preaccepted_appl": "idb0307f87-a434-4110-a766-8fa234e5d7fb",
+          "START": "id2ccd8091-6ab8-4e88-8807-a469b38f7c80",
+          "END": "id81c52e86-c259-4851-b443-4c0a84ac286d",
+          "W_Fix_incomplete_submission": "id6d7410ab-2abd-459d-af00-31693499b1c7",
+          "A_PREACCEPTED": "id5d54b87b-f36d-4269-a304-ded18eaecbdc",
+          "W_Call_after_offer": "id09308593-c6aa-4b04-aedc-f5cee3e110ae",
+          "O_SENT": "id24c08b05-21f0-44a1-bd71-6d9f847cc5d5",
+          "W_Assess_fraud": "idbdbf46b4-2a6b-4bea-94a9-ff7c7056270a",
+          "A_PARTLYSUBMITTED": "id2ff391d3-c147-401b-99d9-e5727aa05b10",
+          "A_REGISTERED": "idb43c19b1-63b4-4d97-a857-c988dfd43f3f",
+          "A_FINALIZED": "id0d996f71-5778-4fb7-ade7-8bf45b9171db",
+          "A_ACCEPTED": "id91ced7c2-20e4-48b2-9239-4006f15b7167",
+          "W_Call_missing_information": "idc3e6cad7-ac32-4794-8f1e-c1b7365a3a29",
+          "A_DECLINED": "idf86d60db-0903-4fd0-bca8-a1164b0825e2",
+          "O_SELECTED": "id13358e92-c083-4ac6-8d55-40cd01b8e0df",
+          "O_DECLINED": "idca1bce11-9e69-4f25-b0c9-14e0ed6b9f8b",
+          "A_CANCELLED": "id62779d62-cbed-4c0a-8541-b1af08065fc2",
+          "A_ACTIVATED": "id3aa3d14a-365e-443c-8e4e-54ee37c96ad4",
+          "O_SENT_BACK": "id4916f35d-182a-4fa0-9d4c-da615d500862",
+          "O_ACCEPTED": "id3b78cb29-638f-415d-82ab-bc014bf583ac",
+          "W_Assess_application": "idb7a4a411-ff52-4043-bc2b-bf72307df82b",
+          "O_CANCELLED": "id6faa9fea-0e66-460f-9430-be3893a4762a",
+          "A_SUBMITTED": "id7558a2a1-6f81-4b17-8371-7f1087b33d3e",
+          "O_CREATED": "id31200946-f09c-47d1-a869-c8e2ba01b505"
+     },
+     "DFG_only_task": {
+          "O_CANCELLED": [
+               "O_CANCELLED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED"
+          ],
+          "A_PREACCEPTED": [
+               "W_Complete_preaccepted_appl"
+          ],
+          "O_SENT_BACK": [
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "O_SELECTED",
+               "W_Call_missing_information",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "O_SELECTED",
+               "W_Assess_application"
+          ],
+          "A_PARTLYSUBMITTED": [
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "A_FINALIZED",
+               "O_SELECTED",
+               "O_CANCELLED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_PREACCEPTED",
+               "W_Fix_incomplete_submission",
+               "W_Assess_fraud"
+          ],
+          "W_Complete_preaccepted_appl": [
+               "W_Complete_preaccepted_appl",
+               "A_ACCEPTED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "A_FINALIZED",
+               "O_SELECTED",
+               "O_CANCELLED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED"
+          ],
+          "A_CANCELLED": [
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED"
+          ],
+          "A_FINALIZED": [
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED"
+          ],
+          "W_Call_missing_information": [
+               "W_Call_missing_information",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "O_SELECTED"
+          ],
+          "A_ACCEPTED": [
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "A_FINALIZED",
+               "O_SELECTED",
+               "O_CANCELLED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED"
+          ],
+          "O_SELECTED": [
+               "O_CREATED"
+          ],
+          "O_CREATED": [
+               "O_SENT"
+          ],
+          "O_SENT": [
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "O_SELECTED",
+               "O_SENT_BACK",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "O_SELECTED",
+               "W_Call_missing_information",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "O_SELECTED",
+               "W_Assess_application",
+               "W_Call_after_offer"
+          ],
+          "O_DECLINED": [
+               "END"
+          ],
+          "START": [
+               "A_SUBMITTED"
+          ],
+          "W_Assess_application": [
+               "W_Assess_application",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "O_SELECTED"
+          ],
+          "A_DECLINED": [
+               "END",
+               "O_DECLINED"
+          ],
+          "A_SUBMITTED": [
+               "A_PARTLYSUBMITTED"
+          ],
+          "W_Call_after_offer": [
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "O_SELECTED",
+               "O_SENT_BACK",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "O_SELECTED",
+               "W_Call_missing_information",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "O_SELECTED",
+               "W_Assess_application",
+               "W_Call_after_offer"
+          ],
+          "END": [
+               "ide1cade0c-1583-447d-b431-3c160e7314b4"
+          ],
+          "A_ACTIVATED": [
+               "END"
+          ],
+          "O_ACCEPTED": [
+               "A_APPROVED"
+          ],
+          "A_APPROVED": [
+               "A_REGISTERED"
+          ],
+          "A_REGISTERED": [
+               "A_ACTIVATED"
+          ],
+          "W_Fix_incomplete_submission": [
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "A_FINALIZED",
+               "O_SELECTED",
+               "O_CANCELLED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_PREACCEPTED",
+               "W_Fix_incomplete_submission"
+          ],
+          "W_Assess_fraud": [
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_CANCELLED",
+               "A_FINALIZED",
+               "O_SELECTED",
+               "O_CANCELLED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "END",
+               "A_DECLINED",
+               "O_ACCEPTED",
+               "A_PREACCEPTED",
+               "W_Fix_incomplete_submission",
+               "W_Assess_fraud"
+          ]
+     }
+}
