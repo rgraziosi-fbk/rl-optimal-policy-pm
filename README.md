@@ -4,4 +4,4 @@ The repository contains four folders:
 - evaluation-syn-logs: contains the code to evaluate policies using the synthetic simulation model
 - evaluation-real-logs: contains the code to evaluate policies using the simulation model discovered from real world event logs
 
-Each folder contains a README file with installation and usage instructions.
+*Each folder contains a **README** file with installation and usage instructions.*
