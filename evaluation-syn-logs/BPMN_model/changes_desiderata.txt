@@ -1,0 +1,2 @@
+possible changes to make for the bpmn model, nothing is necessary!
+-change condition to O_DECLINE: p=1 if n_active_offer>0 else p=0

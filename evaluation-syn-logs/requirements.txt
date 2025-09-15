@@ -1,0 +1,12 @@
+d3rlpy==2.3.0
+matplotlib==3.10.1
+numpy==1.26.4
+pandas==2.2.3
+pm4py==2.2.32
+scipy==1.15.2
+seaborn==0.13.2
+simpy==4.1.1
+torch==2.6.0
+gym==0.26.2
+gymnasium==0.28.1
+scikit-learn==1.6.1
