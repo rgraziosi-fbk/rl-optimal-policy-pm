@@ -33,6 +33,14 @@ Logs are saved in the folder `output`
 
 **Simulation evaluation:**
 
+- ***Informed Heuristic policy:***
+
+To generate a simulation evaluation for the Informed Heuristic policy run the following command:
+
+```shell
+python main.py -t baseline -n 2000 -m cluster_models/log_2000_100/
+```
+
 - ***MDP policies:***
 
 The policies are contained in `clusters_model`, each subfolder corresponds to one event log and contains the two pickle files `_model.pkl` and `_pickle.pkl` defining the clusterization model and all the policies learned for every choice of the scale factor *h*.
@@ -56,6 +64,13 @@ python main.py -t cql -o sim_eval_log_2000_cql_50 -n 2000 -m cql_recommender/out
 Logs and reward files are saved in the folder `output`
 
 
+**Later activation of the policy:**
+
+To integrate the policy in the simulation starting at a later execution point (e.g. from the 5th activity) use the option *-x*
+```shell
+python main.py -t cql -o sim_eval_log_2000_cql_50 -n 2000 -m cql_recommender/output_data/log_2000_e50 -x 5
+```
+
 **Analysis of the reward obtained with the simulation evaluation:**
 
 The following scripts are used to aggregate the simulation rewards, compare the performance of different policies on the same event log, and perform statistical significance tests:
@@ -63,4 +78,6 @@ The following scripts are used to aggregate the simulation rewards, compare the 
 - `output_analysis.py`: performs aggregated analysis on evaluation simulations.
 - `output_analysis_evolution.py`: performs aggregated analysis on evaluation simulations, considering policies activated at different prefix lengths.
 - `p-test_calculator.py`: performs pairwise statistical significance tests between policies and computes the corresponding p-values.
-- `p-test_calculator_evolution.py`: performs pairwise statistical significance tests between policies and computes the corresponding p-values, considering activation at different prefix lengths.
+- `p-test_calculator_plot.py`: based on aggregated and statistical analysis generates the corresponding plots
+- `p-test_calculator_evolution.py`: performs pairwise statistical significance tests and generate corresponding plots between policies and computes the corresponding p-values, considering activation at different prefix lengths.
+- `p-test_calculator_cluster.py`: performs pairwise statistical significance tests and generate corresponding plots between MDP-based policies and computes the corresponding p-values, considering different choice for the cluster number parameter in the creation of the MDP

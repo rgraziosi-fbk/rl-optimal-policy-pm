@@ -31,7 +31,7 @@ PROBABILITY = {
     'exi_Gateway_EndProcess1': [0.99, 0.01],  #[a18ba001-19fc-4192-9d38-44ee48ad0f21, c5c9730d-dcb7-4282-8eaf-21aa3d65e4a0]
     'exi_Gateway_CallXor': [0.95, 0.05],#to not do call after offer  #[9c97a049-ea71-4f2f-965b-a31cd1a9c094, f4a4df76-803a-44fa-bda0-843df8ba7e5a]
     'exi_Gateway_SentLoop': [0.95, 0.05],#to remain loop ok  #[c73d9a95-427d-4ea7-ba7a-a6e07add5398, d8641656-f608-4cfc-8cf0-d73479c0a728]
-    'exi_Gateway_SentBackLoop': [0.50, 0.50],#special, to define  #[80895713-c8d1-4ed4-bd44-4ae830f8a0b4, ad68b65c-da77-4590-b756-4a2ce60ad1dd]
+    'exi_Gateway_SentBackLoop': [0.50, 0.50],#special, to define  #[80895713-c8d1-4ed4-bd44-4ae830f8a0b4, ad68b65c-da77-4590-b756-4a2ce60ad1dd], [towards exi_Gateway_AccDecCanc, towards O_SELECTED]
     'exi_Gateway_ODeclined': [0.50, 0.50]#special to define (pos 1 to do DECLINED)  #[35b865b5-b643-4f4f-b737-003a2b7d9b6d, O_DECLINED]
 }
 
@@ -54,18 +54,18 @@ PROBABILITY_DFG = {
     'exi_Gateway_LoopPreaccepted': ([0.60, 0.40], ['exi_Gateway_accepted', 'W_Complete_preaccepted_appl']),
     'exi_Gateway_accepted': ([0.30, 0.70], ['exi_Gateway_AccDecCanc', 'A_ACCEPTED']),
     'exi_Gateway_LoopWFix': ([0.15, 0.85], ['W_Fix_incomplete_submission', 'exi_Gateway_preaccepted']),
-    'exi_Gateway_AccDecCanc': ([0.33, 0.33, 0.34], ['O_ACCEPTED', 'A_CANCELLED', 'exi_Gateway_ODeclined']),
+    'exi_Gateway_AccDecCanc': ([0.33, 0.33, 0.34], ['O_ACCEPTED', 'A_CANCELLED', 'exi_Gateway_ODeclined']),  # placeholder: it is overwritten in the merge_token code with a more specific rule
     'exi_Gateway_CallMissingLoop': ([0.60, 0.40], ['exi_Gateway_OCancelled', 'W_Call_missing_information']),
     'exi_Gateway_AssessLoop': ([0.59, 0.01, 0.40], ['exi_Gateway_CallMissing', 'END', 'W_Assess_application']),
     'exi_Gateway_CallMissing': ([0.30, 0.70], ['exi_Gateway_OCancelled', 'W_Call_missing_information']),
-    'exi_Gateway_OCancelled': ([0.50, 0.50], ['exi_Gateway_SentBackLoop', 'O_CANCELLED']),  #TODO: check this exi_Gateway_SentBackLoop
-    'exi_Gateway_SentBack': ([0.60, 0.40], ['O_SENT_BACK', 'exi_Gateway_OCancelled']),
+    'exi_Gateway_OCancelled': ([0.50, 0.50], ['exi_Gateway_SentBackLoop', 'O_CANCELLED']),   # placeholder: it is overwritten in the merge_token code with a more specific rule #TODO: check this exi_Gateway_SentBackLoop
+    'exi_Gateway_SentBack': ([0.60, 0.40], ['O_SENT_BACK', 'exi_Gateway_OCancelled']),  # placeholder: it is overwritten in the merge_token code with a more specific rule
     'exi_Gateway_CallLoop': ([0.60, 0.40], ['exi_Gateway_EndProcess1', 'W_Call_after_offer']),
     'exi_Gateway_EndProcess1': ([0.99, 0.01], ['exi_Gateway_SentBack', 'END']),
     'exi_Gateway_CallXor': ([0.95, 0.05], ['W_Call_after_offer', 'exi_Gateway_EndProcess1']),
     'exi_Gateway_SentLoop': ([0.95, 0.05], ['exi_Gateway_CallXor', 'O_SELECTED']),
-    'exi_Gateway_SentBackLoop': ([0.50, 0.50], ['exi_Gateway_AccDecCanc', 'O_SELECTED']), #TODO: check this
-    'exi_Gateway_ODeclined': ([0.50, 0.50], ['A_DECLINED', 'O_DECLINED'])
+    'exi_Gateway_SentBackLoop': ([0.50, 0.50], ['exi_Gateway_AccDecCanc', 'O_SELECTED']),   # placeholder: it is overwritten in the merge_token code with a more specific rule #TODO: check this
+    'exi_Gateway_ODeclined': ([0.50, 0.50], ['A_DECLINED', 'O_DECLINED'])  # placeholder: it is overwritten in the merge_token code with a more specific rule
 }
 
 PROCESSING_TIME_VARIABLE = {
@@ -141,28 +141,29 @@ END_ACTIVITIES = ['A_DECLINED', 'A_ACTIVATED', 'A_CANCELLED', 'END']
 
 ENVIRONMENT_ACTIVITIES = ['O_SENT_BACK', 'O_DECLINED', 'O_ACCEPTED', 'A_CANCELLED']
 
+# for DFG (i.e. when an external policy is applied to the simulator)
 POSSIBLE_ACTIONS = {'A_SUBMITTED': ['A_PARTLYSUBMITTED'],
                     'A_PARTLYSUBMITTED': ['W_Fix_incomplete_submission', 'W_Assess_fraud', 'A_PREACCEPTED', 'A_DECLINED', 'A_CANCELLED'],
                     'W_Fix_incomplete_submission': ['W_Fix_incomplete_submission', 'A_PREACCEPTED', 'A_DECLINED', 'A_CANCELLED'],
                     'W_Assess_fraud': ['A_PREACCEPTED', 'A_DECLINED', 'A_CANCELLED'],
                     'A_PREACCEPTED': ['W_Complete_preaccepted_appl'],
-                    'W_Complete_preaccepted_appl': ['W_Complete_preaccepted_appl', 'A_ACCEPTED', 'O_DECLINED', 'A_CANCELLED'],
+                    'W_Complete_preaccepted_appl': ['W_Complete_preaccepted_appl', 'A_ACCEPTED', 'A_DECLINED', 'A_CANCELLED'],
                     'A_ACCEPTED': ['A_FINALIZED'],
                     'A_FINALIZED': ['O_SELECTED'],
                     'O_SELECTED': ['O_CREATED'],
                     'O_CREATED': ['O_SENT'],
-                    'O_SENT': ['O_SELECTED', 'W_Call_after_offer', 'END', 'O_SENT_BACK', 'O_CANCELLED', 'O_DECLINED', 'O_ACCEPTED'],  # non c'è A_CANCELLED perché qui almeno un'offerta è attiva #TODO: rompe qualcosa aver messo END qui dentro?
-                    'W_Call_after_offer': ['W_Call_after_offer', 'END', 'O_SENT_BACK', 'O_CANCELLED',  'O_SELECTED', 'O_DECLINED', 'O_ACCEPTED'],  #TODO: rompe qualcosa aver messo END qui dentro?
+                    'O_SENT': ['O_SELECTED', 'W_Call_after_offer', 'END', 'O_SENT_BACK', 'O_CANCELLED', 'O_DECLINED', 'O_ACCEPTED', 'A_CANCELLED', 'A_DECLINED'],
+                    'W_Call_after_offer': ['W_Call_after_offer', 'END', 'O_SENT_BACK', 'O_CANCELLED',  'O_SELECTED', 'O_DECLINED', 'O_ACCEPTED', 'A_CANCELLED', 'A_DECLINED'],
                     'O_SENT_BACK': ['W_Assess_application'],
-                    'W_Assess_application': ['W_Assess_application', 'END', 'W_Call_missing_information', 'O_CANCELLED', 'O_SELECTED', 'O_DECLINED', 'O_ACCEPTED'],  #TODO: rompe qualcosa aver messo END qui dentro?
-                    'W_Call_missing_information': ['W_Call_missing_information', 'O_CANCELLED', 'O_SELECTED', 'O_DECLINED', 'O_ACCEPTED'],
+                    'W_Assess_application': ['W_Assess_application', 'END', 'W_Call_missing_information', 'O_CANCELLED', 'O_SELECTED', 'O_DECLINED', 'O_ACCEPTED', 'A_CANCELLED', 'A_DECLINED'],  #TODO: rompe qualcosa aver messo END qui dentro?
+                    'W_Call_missing_information': ['W_Call_missing_information', 'O_CANCELLED', 'O_SELECTED', 'O_DECLINED', 'O_ACCEPTED', 'A_CANCELLED', 'A_DECLINED'],
                     'O_ACCEPTED': ['A_APPROVED'],
                     'A_APPROVED': ['A_REGISTERED'],
                     'A_REGISTERED': ['A_ACTIVATED'],
-                    'O_CANCELLED': ['O_SELECTED', 'O_DECLINED', 'O_ACCEPTED', 'A_CANCELLED'],
+                    'O_CANCELLED': ['O_SELECTED', 'O_DECLINED', 'O_ACCEPTED', 'A_CANCELLED', 'A_DECLINED'],
                     'O_DECLINED': ['A_DECLINED']}
 
-
+# for Petri Net (i.e. when the built-in simulator policy is used)
 POSSIBLE_ACTIONS2 = {'A_SUBMITTED': ['A_PARTLYSUBMITTED'],
                      'A_PARTLYSUBMITTED': ['W_Fix_incomplete_submission', 'GATEWAY_A_DECLINED_O_DECLINED', 'A_PREACCEPTED', 'W_Assess_fraud'],
                      'W_Fix_incomplete_submission': ['A_PREACCEPTED', 'GATEWAY_A_DECLINED_O_DECLINED', 'W_Fix_incomplete_submission'],

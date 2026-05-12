@@ -10,16 +10,18 @@ from scipy.stats import truncnorm
 
 class MergeToken(object):
 
-    def __init__(self, path_petrinet, id, process, rare=None):
+    def __init__(self, path_petrinet, id, process, rare=None, starting_at=0):
         self.net, self.am, self.fm = pm4py.read_pnml(path_petrinet)
         self.id = id
         self.process = process
         self.amount = self.generate_amount()
         self.prefix = []
         self.prefix_time = 0
+        self.prefix_time_with_agent = 0
         self.more_offer_same_time = False
         self.skip = None
         self.rare = rare
+        self.starting_at = starting_at
 
     def compute_reward(self, completed_trace, total_duration, amount):
         # this method computes the reward based on total trace duration (without waiting times) and amount of the loan
@@ -36,7 +38,7 @@ class MergeToken(object):
     def compute_probability(self, gateway, all_enabled_trans):
         all_enabled_trans.sort(key=lambda x: x.name)
         if gateway == 'exi_Gateway_ODeclined':
-            print('here')
+            print('here')  # debug
         match gateway:
             case 'exi_Gateway_AccDecCanc':
                 if (self.prefix.count('O_CREATED')-self.prefix.count('O_CANCELLED')) == 0: #no offerte attive
@@ -47,27 +49,24 @@ class MergeToken(object):
                     else:
                         next = int(random.choices([0, 2], [0.01, 0.99])[0])
             case 'exi_Gateway_ODeclined':
-                if self.prefix.count('A_PREACCEPTED') == 0:
+                if (self.prefix.count('O_CREATED')-self.prefix.count('O_CANCELLED')) == 0: #no offerte attive
                     next = 0  # A_DECLINED
                 else:
                     next = 1  # O_DECLINED
             case 'exi_Gateway_OCancelled':
-                if self.prefix.count('O_SENT_BACK') > 0:
+                if self.prefix.count('O_SENT_BACK') == 0:  # never done O_SENT_BACK
                     next = int(random.choices([0, 1], [0.85, 0.15])[0])  # 0 = next gateway, 1 = O_CANCELLED
                 else:
-                    next = int(random.choices([0, 1], [0.98, 0.02])[0])
+                    next = int(random.choices([0, 1], [0.98, 0.02])[0])  # is O_SENT_BACK has been executed then canceling an offer is less probable
             case 'exi_Gateway_SentBackLoop':
                 if (self.prefix.count('O_CREATED')-self.prefix.count('O_CANCELLED')) == 0: # no_loop
                     next = 0
                 else:
-                    p = [0.97, 3] if self.prefix.count('O_SENT_BACK') > 0 else [0.45, 0.55]  #TODO: errore 3 invece che 0.03?
-                    next = int(random.choices([0, 1], p)[0])
+                    p = [0.97, 0.03] if self.prefix.count('O_SENT_BACK') > 0 else [0.45, 0.55]
+                    next = int(random.choices([0, 1], p)[0])  # {0: towards exi_Gateway_AccDecCanc, 1: towards O_SELECTED}
             case 'exi_Gateway_SentBack':
-                if self.prefix.count('O_SENT_BACK') == 0:
-                    sent_back = 0.60
-                else:
-                    sent_back = self.define_prob_sent_back()
-                next = int(random.choices([0, 1], [sent_back, 1-sent_back])[0])
+                sent_back = self.define_prob_sent_back()
+                next = int(random.choices([0, 1], [sent_back, 1-sent_back])[0]) # {0: O_SENT_BACK, 1: exi_Gateway_OCancelled}
             case 'exi_Gateway_preaccepted':
                 if self.rare:
                     gateway = 'exi_Gateway_preaccepted' + '_rare'
@@ -202,6 +201,9 @@ class MergeToken(object):
                     yield env.timeout(1)
                 processing_time = self.get_processing_time(trans)
                 self.prefix_time += processing_time
+                if len(self.prefix) >= self.starting_at:
+                    # this is the execution time computed only from the point in which the agent is enabled
+                    self.prefix_time_with_agent += processing_time
                 buffer.append(START_SIMULATION + timedelta(seconds=env.now))
                 yield env.timeout(processing_time)
                 self.process.release_resource(ROLE_ACTIVITY[trans.label], request_resource)

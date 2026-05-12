@@ -140,15 +140,15 @@ class MergeTokenDFG(object):
                     else:
                         next = random.choices(['O_ACCEPTED', 'O_DECLINED'], [0.01, 0.99])[0]
             case 'exi_Gateway_ODeclined':
-                if self.prefix.count('A_PREACCEPTED') == 0:
+                if (self.prefix.count('O_CREATED')-self.prefix.count('O_CANCELLED')) == 0: #no offerte attive
                     next = 'A_DECLINED'
                 else:
                     next = 'O_DECLINED'
             case 'exi_Gateway_OCancelled':
-                if self.prefix.count('O_SENT_BACK') > 0:
+                if self.prefix.count('O_SENT_BACK') == 0:  # never done O_SENT_BACK
                     next = random.choices([self.compute_prob('exi_Gateway_SentBackLoop'), 'O_CANCELLED'], [0.85, 0.15])[0]  # 0 = next gateway, 1 = O_CANCELLED
                 else:
-                    next = random.choices([self.compute_prob('exi_Gateway_SentBackLoop'), 'O_CANCELLED'], [0.98, 0.02])[0]
+                    next = random.choices([self.compute_prob('exi_Gateway_SentBackLoop'), 'O_CANCELLED'], [0.98, 0.02])[0]  # is O_SENT_BACK has been executed then canceling an offer is less probable
             case 'exi_Gateway_SentBackLoop':
                 if (self.prefix.count('O_CREATED')-self.prefix.count('O_CANCELLED')) == 0: # no_loop
                     next = self.compute_prob('exi_Gateway_AccDecCanc')
@@ -156,10 +156,7 @@ class MergeTokenDFG(object):
                     p = [0.97, 0.03] if self.prefix.count('O_SENT_BACK') > 0 else [0.45, 0.55]
                     next = random.choices([self.compute_prob('exi_Gateway_AccDecCanc'), 'O_SELECTED'], p)[0]
             case 'exi_Gateway_SentBack':
-                if self.prefix.count('O_SENT_BACK') == 0:
-                    sent_back = 0.60
-                else:
-                    sent_back = self.define_prob_sent_back()
+                sent_back = self.define_prob_sent_back()
                 next = random.choices(['O_SENT_BACK', self.compute_prob('exi_Gateway_OCancelled')], [sent_back, 1 - sent_back])[0]
             case 'exi_Gateway_preaccepted':
                 if self.rare:

@@ -62,13 +62,43 @@ def main():
         all_length_stats = compute_stats(all_length_list)
         not_error_length_stats = compute_stats(not_error_length_list)
 
-        header = 'folder_name,agent_model_name,policy_size,policy_type,policy_type_new,environment_model_name,stochastic_environment,force_environment,total_runs,completed_runs,avg_reward,min_reward,max_reward,median_reward,stdev_reward,avg_reward_all,min_reward_all,max_reward_all,median_reward_all,stdev_reward_all,avg_length,min_length,max_length,median_length,stdev_length,avg_length_all,min_length_all,max_length_all,median_length_all,stdev_length_all,timestamp'
-        value_list = [subfolder_name, agent_model_name, policy_size, policy_type, policy_type_new, environment_model_name, '', '', all_reward_stats['count'], not_error_reward_stats['count'],
-                 not_error_reward_stats['avg'], not_error_reward_stats['min'], not_error_reward_stats['max'], not_error_reward_stats['median'], not_error_reward_stats['stdev'],
-                 all_reward_stats['avg'], all_reward_stats['min'], all_reward_stats['max'], all_reward_stats['median'], all_reward_stats['stdev'],
-                 not_error_length_stats['avg'], not_error_length_stats['min'], not_error_length_stats['max'], not_error_length_stats['median'], not_error_length_stats['stdev'],
-                 all_length_stats['avg'], all_length_stats['min'], all_length_stats['max'], all_length_stats['median'], all_length_stats['stdev'],
-                 '']
+        value_dict = {'folder_name': subfolder_name,
+                      'agent_model_name': agent_model_name,
+                      'policy_size': policy_size,
+                      'policy_type': policy_type,
+                      'policy_type_new': policy_type_new,
+                      'environment_model_name': environment_model_name,
+                      'stochastic_environment': '',
+                      'force_environment': '',
+                      'total_runs': all_reward_stats['count'],
+                      'completed_runs': not_error_reward_stats['count'],
+                      'avg_reward': not_error_reward_stats['avg'],
+                      'min_reward': not_error_reward_stats['min'],
+                      'max_reward': not_error_reward_stats['max'],
+                      'median_reward': not_error_reward_stats['median'],
+                      'stdev_reward': not_error_reward_stats['stdev'],
+                      'avg_reward_all': all_reward_stats['avg'],
+                      'min_reward_all': all_reward_stats['min'],
+                      'max_reward_all': all_reward_stats['max'],
+                      'median_reward_all': all_reward_stats['median'],
+                      'stdev_reward_all': all_reward_stats['stdev'],
+                      'avg_length': not_error_length_stats['avg'],
+                      'min_length': not_error_length_stats['min'],
+                      'max_length': not_error_length_stats['max'],
+                      'median_length': not_error_length_stats['median'],
+                      'stdev_length': not_error_length_stats['stdev'],
+                      'avg_length_all': all_length_stats['avg'],
+                      'min_length_all': all_length_stats['min'],
+                      'max_length_all': all_length_stats['max'],
+                      'median_length_all': all_length_stats['median'],
+                      'stdev_length_all': all_length_stats['stdev'],
+                      'timestamp': ''
+                      }
+
+        header_list = value_dict.keys()
+        value_list = value_dict.values()
+
+        header = ','.join(header_list)
         result_str = ','.join(value_list)
 
         # write file  # append

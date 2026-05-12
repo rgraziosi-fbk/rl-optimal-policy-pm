@@ -1,6 +1,8 @@
 import csv
 import numpy as np
 import simpy
+
+from baseline import Baseline
 from loan_process import Process
 from MAINparameters import *
 import time
@@ -25,13 +27,15 @@ def setup(env: simpy.Environment, NAME_EXPERIMENT, N_TRACE, type, rare, path_mod
         recommender_model = CQL_agent(path_model)
     elif type == 'cluster':
         recommender_model = cluster_model(path_model, policy, last_position)
+    elif type == 'baseline':
+        recommender_model = Baseline()
     else:
         recommender_model = None
     for i in range(0, N_TRACE):
         interval = np.random.exponential(scale=1003, size=1)[0]
         yield env.timeout(interval)
         if 'synthetic' in type:
-            env.process(MergeToken(MERGE, i, simulation_process, rare).simulation(env, writer, writer2))
+            env.process(MergeToken(MERGE, i, simulation_process, rare, starting_at).simulation(env, writer, writer2))
         else:
             env.process(MergeTokenDFG(i, simulation_process, recommender_model, rare, starting_at).simulation(env, writer, writer2))  # original
 
