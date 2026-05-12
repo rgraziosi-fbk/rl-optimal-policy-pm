@@ -1,0 +1,9 @@
+file_name,sil_knee1,sil_max,wss_knee0,wss_knee1,sil_knee1_smooth,wss_knee1_smooth,wss_knee1_20
+event_log_16000_training_sil_maxmax_20260410140429.txt,140,300,80,80,140,120,80
+event_log_2000_training_sil_maxmax_20260410130416.txt,100,300,100,100,160,100,100
+event_log_4000_training_sil_maxmax_20260410131248.txt,100,300,100,100,180,100,100
+event_log_8000_training_sil_maxmax_20260410133102.txt,120,300,100,100,140,120,100
+event_log_rare_16000_training_sil_maxmax_20260410151101.txt,120,300,60,100,140,120,100
+event_log_rare_2000_training_sil_maxmax_20260410145224.txt,120,300,100,100,140,100,100
+event_log_rare_4000_training_sil_maxmax_20260410145502.txt,140,300,100,100,160,120,100
+event_log_rare_8000_training_sil_maxmax_20260410150016.txt,80,300,80,80,220,100,80
